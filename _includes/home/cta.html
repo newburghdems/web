@@ -1,0 +1,28 @@
+<section class="py-10 sm:py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <a href="{{ 'voter-resources/' | localize_url | relative_url }}" class="group block bg-dem-blue-400 hover:bg-dem-blue/80 text-white rounded-md shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+                <div class="flex flex-col items-center justify-center h-full p-6 sm:p-8 md:p-10 text-center">
+                    <i data-lucide="vote" class="h-12 w-12 sm:h-14 sm:w-14 mb-4 transition-transform duration-300 group-hover:scale-110"></i>
+                    <span class="font-merriweather text-2xl sm:text-3xl font-bold">{{ site.data.i18n[page.lang].home.cta.vote_title }}</span>
+                    <p class="font-inter text-sm text-dem-blue-100 mt-1">{{ site.data.i18n[page.lang].home.cta.vote_subtitle }}</p>
+                </div>
+            </a>
+            <a href="{{ 'get-involved/' | localize_url | relative_url }}" class="group block bg-dem-blue-600 hover:bg-dem-blue/80 text-white rounded-md shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+                <div class="flex flex-col items-center justify-center h-full p-6 sm:p-8 md:p-10 text-center">
+                    <i data-lucide="handshake" class="h-12 w-12 sm:h-14 sm:w-14 mb-4 transition-transform duration-300 group-hover:scale-110"></i>
+                    <span class="font-merriweather text-2xl sm:text-3xl font-bold">{{ site.data.i18n[page.lang].home.cta.volunteer_title }}</span>
+                    <p class="font-inter text-sm text-dem-blue-100 mt-1">{{ site.data.i18n[page.lang].home.cta.volunteer_subtitle }}</p>
+                </div>
+            </a>
+            <a href="https://secure.actblue.com/donate/town-of-newburgh-democratic-committee-1" class="group block bg-oc-orange-dark hover:bg-oc-orange-dark/80 text-white rounded-md shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1">
+                <div class="flex flex-col items-center justify-center h-full p-6 sm:p-8 md:p-10 text-center">
+                    <i data-lucide="heart" class="h-12 w-12 sm:h-14 sm:w-14 mb-4 transition-transform duration-300 group-hover:scale-110"></i>
+                    <span class="font-merriweather text-2xl sm:text-3xl font-bold">{{ site.data.i18n[page.lang].home.cta.donate_title }}</span>
+                    <p class="font-inter text-sm text-orange-100 mt-1">{{ site.data.i18n[page.lang].home.cta.donate_subtitle }}</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>

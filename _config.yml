@@ -1,0 +1,26 @@
+title: Town of Newburgh, NY - Democratic Committee
+email: townofnewburghdems@gmail.com
+description: >-
+  Dedicated to engaging our community, supporting Democratic candidates,
+  and championing Democratic values for a more inclusive and prosperous Town of Newburgh.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://townofnewburghdems.com" # the base hostname & protocol for your site, e.g. http://example.com
+instagram_username: townofnewburghdems
+
+languages: ["en", "es"]
+default_language: "en"
+exclude_from_localization: ["assets", "javascript", "images", "css"]
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .gitignore
+  - README.md
+  - package.json
+  - package-lock.json
+  - Procfile.dev
+  - bin

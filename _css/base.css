@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --color-dem-blue-50: #E9F2FC;
+    --color-dem-blue-100: #D2E5F9;
+    --color-dem-blue-200: #A1C8F2;
+    --color-dem-blue-300: #74AEEB;
+    --color-dem-blue-400: #4391E5;
+    --color-dem-blue-500: #1E75D5;
+    --color-dem-blue-600: #185EAA;
+    --color-dem-blue-700: #124882;
+    --color-dem-blue-800: #0C2F55;
+    --color-dem-blue-900: #06192D;
+    --color-dem-blue-950: #030C16;
+    --color-oc-orange: oklch(0.76 0.156 50.21);
+    --color-oc-orange-dark: #FE6211;
+    --color-oc-orange-light: #FFF6ED;
+    --color-light-gray: oklch(0.97 0 0);
+
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: "Merriweather", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-merriweather: "Merriweather", serif;
+    --font-lato: "Inter", sans-serif;
+}
+
+.hero-bg-image {
+ background-image: url('/assets/img/chadwick_lake_park.jpg'); /* Replace with your actual image path */
+ background-size: cover;
+ background-position: center;
+}

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@atproto/api": "^0.14.4",
+    "ical": "^0.8.0",
+    "@tailwindcss/cli": "^4.1.6",
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-react": "^7.22.15",
+    "@tailwindcss/typography": "^0.5.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build:react": "npx babel assets/js/src --out-dir assets/js/dist --presets=@babel/preset-react --extensions '.jsx' --source-maps",
+    "watch:react": "npx babel assets/js/src --out-dir assets/js/dist --presets=@babel/preset-react --extensions '.jsx' --source-maps --watch"
+  }
+}

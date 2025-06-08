@@ -1,0 +1,85 @@
+<section class="py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-xl font-inter text-gray-700 leading-relaxed mb-8">
+                {{ site.data.i18n[page.lang].thank_you.header }}
+            </p>
+            <div class="border-t border-dem-blue-200 pt-8">
+                <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-500 mb-5">
+                    {{ site.data.i18n[page.lang].thank_you.whats_next }}
+                </h3>
+                <div class="space-y-6 text-lg font-inter text-gray-600 leading-relaxed">
+                    <p>
+                        {{ site.data.i18n[page.lang].thank_you.while_you_wait }}:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <a href="{{ 'get-involved/' | localize_url | relative_url }}"
+                           class="group block bg-dem-blue-50 hover:bg-dem-blue-100 text-dem-blue-700 rounded-md shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="users" class="h-10 w-10 mb-3 text-dem-blue-500"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].thank_you.get_involved }}</span>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    {{ site.data.i18n[page.lang].thank_you.discover }}
+                                </p>
+                            </div>
+                        </a>
+                        <a href="{{ 'events/' | localize_url | relative_url }}"
+                           class="group block bg-dem-blue-50 hover:bg-dem-blue-100 text-dem-blue-700 rounded-md shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="calendar-days" class="h-10 w-10 mb-3 text-dem-blue-500"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].thank_you.upcoming_events }}</span>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    {{ site.data.i18n[page.lang].thank_you.upcoming_events_cta }}
+                                </p>
+                            </div>
+                        </a>
+                        <a href="{{ 'our-candidates/' | localize_url | relative_url }}"
+                           class="group block bg-dem-blue-50 hover:bg-dem-blue-100 text-dem-blue-700 rounded-md shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="user-check" class="h-10 w-10 mb-3 text-dem-blue-500"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].thank_you.our_candidates }}</span>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    {{ site.data.i18n[page.lang].thank_you.our_candidates_cta }}
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://secure.actblue.com/donate/town-of-newburgh-democratic-committee-1"
+                           target="_blank" rel="noopener noreferrer"
+                           class="group block bg-orange-50 hover:bg-oc-orange text-oc-orange-dark rounded-md shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="heart" class="h-10 w-10 mb-3 text-oc-orange"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].thank_you.donate }}</span>
+                                <p class="text-sm text-gray-600 mt-1">{{ site.data.i18n[page.lang].thank_you.donate_cta }}</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="mt-8">
+                        {{ site.data.i18n[page.lang].thank_you.dont_forget }}:
+                    </p>
+                    <div class="flex items-center justify-center space-x-4 mt-4">
+                        <a href="https://www.instagram.com/newburghtowndems" target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800" title="Follow us on Instagram">
+                            <i data-lucide="instagram" class="h-8 w-8"></i>
+                        </a>
+                        <a href="https://bsky.app/profile/newburghdems.org" target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800" title="Follow us on Bluesky">
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg font-inter text-gray-700 leading-relaxed mt-12">
+                {{ site.data.i18n[page.lang].thank_you.final_thank_you }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+</script>

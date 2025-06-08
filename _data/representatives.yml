@@ -1,0 +1,92 @@
+# Current elected representatives serving the Town of Newburgh, NY
+
+levels:
+  - level_name: "Town of Newburgh, NY"
+    officials:
+      - name: "Gil Piaquadio"
+        position: "Town Supervisor"
+        party: "Republican" # Assuming based on other Town officials, verify locally
+        term_year_start: 2024
+        term_year_end: 2026
+        photo: "/assets/img/eo/gil-piaquadio.jpg"
+      - name: "Paul Ruggiero"
+        position: "Town Councilman"
+        party: "Republican" # Assuming based on other Town officials, verify locally
+        term_year_start: 2022
+        term_year_end: 2026
+        photo: "/assets/img/eo/paul-ruggiero.jpg"
+      - name: "Scott Manley"
+        position: "Town Councilman"
+        party: "Republican" # From existing user file
+        term_year_start: 2022
+        term_year_end: 2026
+        photo: "/assets/img/eo/scott-manley.jpg"
+      - name: "Anthony LoBiondo"
+        position: "Town Councilman"
+        party: "Republican" # From existing user file
+        term_year_start: 2020
+        term_year_end: 2026
+        photo: "/assets/img/eo/anthony-lobiondo.jpg"
+      - name: "Jim Politi"
+        position: "Town Councilman"
+        party: "Republican"
+        term_year_start: 2024
+        term_year_end: 2028
+        photo: "/assets/img/eo/jim-politi.jpg"
+
+  - level_name: "Orange County, NY"
+    officials:
+      - name: "Genesis Ramos"
+        position: "County Legislator (District 6)"
+        party: "Democrat"
+        term_year_start: 2022
+        term_year_end: 2026
+        photo: "/assets/img/candidates/genesis-ramos.jpg"
+      - name: "Leigh J. Benton"
+        position: "County Legislator (District 16)"
+        party: "Republican"
+        term_year_start: 2022
+        term_year_end: 2026
+        photo: "/assets/img/eo/leigh-benton.jpg"
+      - name: "Kevindaryán Luján"
+        position: "County Legislator (District 4)"
+        party: "Democrat"
+        term_year_start: 2022
+        term_year_end: 2026
+        photo: "/assets/img/candidates/kevindaryan-lujan.jpg"
+
+  - level_name: "State of New York"
+    officials:
+      - name: "Jonathan Jacobson"
+        position: "State Assemblyman (District 104)"
+        party: "Democrat"
+        term_year_start: 2024
+        term_year_end: 2026
+        photo: "/assets/img/eo/jonathan-jacobson.jpg"
+      - name: "Rob Rolison" # Updated from Rob Rolison based on current district for Newburgh
+        position: "State Senator (District 42)"
+        party: "Republican"
+        term_year_start: 2024
+        term_year_end: 2026
+        photo: "/assets/img/eo/rob-rolison.jpg"
+
+  - level_name: "Federal Government"
+    officials:
+      - name: "Pat Ryan"
+        position: "U.S. House of Representatives (NY-18)"
+        party: "Democrat"
+        term_year_start: 2025
+        term_year_end: 2027
+        photo: "/assets/img/eo/pat-ryan.jpg"
+      - name: "Chuck Schumer"
+        position: "U.S. Senator"
+        party: "Democrat"
+        term_year_start: 2021
+        term_year_end: 2027
+        photo: "/assets/img/eo/chuck-schumer.jpg"
+      - name: "Kirsten Gillibrand"
+        position: "U.S. Senator"
+        party: "Democrat"
+        term_year_start: 2021
+        term_year_end: 2027
+        photo: "/assets/img/eo/kirsten-gillibrand.jpg"

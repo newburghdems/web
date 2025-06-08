@@ -1,0 +1,31 @@
+<section class="py-8 md:py-12 bg-light-gray">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-xl border border-gray-200">
+            <div class="text-center mb-6 md:mb-8">
+                <h2 class="text-3xl font-merriweather font-bold text-dem-blue-600 mb-3">
+                    {{ site.data.i18n[page.lang].events.calendar.title }}
+                </h2>
+                <p class="text-lg font-inter text-gray-700 max-w-2xl mx-auto">
+                    {{ site.data.i18n[page.lang].events.calendar.description }}
+                </p>
+            </div>
+
+            <div class="overflow-hidden rounded-md border border-gray-300 shadow-inner">
+                <iframe
+                        src="https://calendar.google.com/calendar/embed?src=townofnewburghdems%40gmail.com&ctz=America%2FNew_York"
+                        style="border: 0; width: 100%; height: 700px;"
+                        frameborder="0"
+                        scrolling="yes"
+                        title="Town of Newburgh Democratic Committee Events Calendar"
+                        loading="lazy">
+                </iframe>
+            </div>
+            <p class="text-sm font-inter text-gray-500 mt-8 text-center">
+                <strong>{{ site.data.i18n[page.lang].events.calendar.tip }}:</strong>
+                {{ site.data.i18n[page.lang].events.calendar.tip_description }} <a href="https://calendar.google.com/calendar/embed?src=townofnewburghdems%40gmail.com&ctz=America%2FNew_York" target="_blank" rel="noopener noreferrer" class="text-dem-blue-600 hover:text-dem-blue-800 underline font-medium">
+                {{ site.data.i18n[page.lang].events.calendar.tip_action }}
+                </a>.
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,140 @@
+# Democratic candidates currently being supported
+
+- name: "Mary Lou Carolan"
+  position_running_for: "Town Council"
+  bio: |
+    I have lived and worked in the Hudson Valley since 2001 and lived in Newburgh for the past eight years. For over four decades I have built a reputation as an accomplished public library and nonprofit leader centered on communities. An innovative problem solver, I have the skills, insight and vision needed to maintain Newburgh's small town appeal while growing our local economy, enhancing our quality of life, supporting our families and green spaces, and creating better and more participatory government.
+  photo: "/assets/img/candidates/mary-lou-carolan.jpg"
+  links:
+    - text: "Website"
+      url: "https://carolan4newburgh.com/"
+      icon: "external-link"
+    - text: "Facebook"
+      url: "https://www.facebook.com/CarolanforNewburgh/"
+      icon: "facebook"
+    - text: "Instagram"
+      url: "https://www.instagram.com/CarolanforNewburgh/"
+      icon: "instagram"
+    - text: "Donate"
+      url: "https://secure.actblue.com/donate/mary-lou-carolan-1"
+      icon: "heart"
+
+- name: "Mary McLymore"
+  position_running_for: "Town Council"
+  bio: "Bio to come"
+  photo: "https://eu.ui-avatars.com/api/?name=Mary+McLymore&size=400&background=124882&color=fff"
+  links:
+    - text: "Campaign Website"
+      url: "https://candidatewebsite.com"
+      icon: "external-link"
+    - text: "Follow on Facebook"
+      url: "https://facebook.com/candidate"
+      icon: "facebook"
+    - text: "Donate Here"
+      url: "https://secure.actblue.com/donate/candidate"
+      icon: "heart"
+
+- name: "Genesis Ramos"
+  position_running_for: "County Legislator, District 4"
+  bio: |
+    Orange County Legislator Genesis Ramos is a lifelong resident of the City of Newburgh and the proud daughter of Honduran immigrants. As the first woman of color elected to the Orange County Legislature, Genesis has been a strong, consistent, and courageous voice. She is running for re-election in District 4 (City & Town of Newburgh) to continue bringing powerful representation to our community. Genesis began her career in public service at the age of 19 in the nonprofit sector in Newburgh. Over the years, she has joined various municipal and nonprofit boards and ultimately ran for Orange County Legislator, winning her election in 2021. She has been dedicated to improving communities, fighting for justice, and serving as an advocate.
+
+    Genesis served as the Founding Executive Director of the Desmond Community Center for Community Engagement & Wellness at Mount Saint Mary College. Under her leadership, she established the center, providing free health and wellness services for the community. The center continues to operate successfully to this day. She has received multiple awards, including 40 under 40 awards, and has been honored as a Young Leader by the Orange County Democratic Committee. A homeowner in Newburgh, she loves supporting local businesses and is present in her community. She has built strong coalitions both within and outside county government to ensure she represents everyone effectively.
+  photo: "/assets/img/candidates/genesis-ramos.jpg"
+  links:
+    - text: "Website"
+      url: "https://www.genesisforlegislator.com"
+      icon: "external-link"
+    - text: "Facebook"
+      url: "https://www.facebook.com/genesisforlegislator/"
+      icon: "facebook"
+    - text: "Instagram"
+      url: "https://www.instagram.com/legislatorramos/"
+      icon: "instagram"
+    - text: "Donate"
+      url: "https://secure.actblue.com/donate/genesisforlegislator"
+      icon: "heart"
+
+- name: "Virginia Scott"
+  position_running_for: "County Legislator, District 12"
+  bio: |
+    Dear friends, 
+
+    As I talk to constituents around the district, I hear the same thing from everyone. That we're tired of the empty promises and the ongoing useless partisan rhetoric from official's that gets us nowhere. As a teacher for 31 years as well as an incumbent Cornwall Town Councilwoman, I know a thing or two about hearing everyone's voice, and finding a way to a solution. 
+
+    I can assure you, that as your county legislator I will never stop fighting for for our community and for our Orange County values!
+  photo: "/assets/img/candidates/virginia-scott.jpg"
+  links:
+    - text: "Website"
+      url: "https://www.yesvirginiascott.com"
+      icon: "external-link"
+    - text: "Facebook"
+      url: "https://www.facebook.com/yesvirginiascott/"
+      icon: "facebook"
+    - text: "Donate"
+      url: "https://secure.actblue.com/donate/virginia-scott"
+      icon: "heart"
+
+- name: "Gabrielle Hill"
+  position_running_for: "County Legislator, District 6"
+  bio: "Bio to come."
+  photo: "https://eu.ui-avatars.com/api/?name=Gabrielle+Hill&size=400&background=124882&color=fff"
+  links:
+    - text: "Website"
+      url: "https://gabrielleforlegislature.com/"
+      icon: "external-link"
+    - text: "Instagram"
+      url: "https://instagram.com/gabrielleforlegislature"
+      icon: "instagram"
+    - text: "Donate"
+      url: "https://secure.actblue.com/donate/friendsofgabriellehill"
+      icon: "heart"
+
+- name: "Kevindaryán Luján"
+  position_running_for: "County Legislator, District 6"
+  bio: |
+    Prior to becoming a Legislator, Kevindaryán advocated tirelessly to encourage communities to become "Fair and Welcoming Communities" and to adopt Municipal ID programs that he hoped would ease some of the fears created by the Trump administration. He also volunteered for organizations like We Are Newburgh, Planned Parenthood, Nobody Leaves Mid-Hudson, Community Voices Heard and many others. Since becoming a legislator, his collaboration with grass root organizations has continued to grow
+
+    Shortly after completing his graduate degree, Kevindaryán began working at PEOPLE, Inc. in Poughkeepsie, which focuses on hospital and jail diversion and tackling stigma around mental health and substance abuse. This later led him to work in Parole Re-entry services and as Medical Assisted Treatment Coordinator (MAT). As a MAT Coordinator he worked with individuals struggling with their drug addiction and was a bridge from the jail to the community. His role aimed to help individuals work on their wellness, while also reducing recidivism. Currently, he is a program director for Adapt of the Hudson Valley, where he works with individuals with developmental disabilities in residential housing. Kevindaryán has used his nearly 15 years of experience human services to create a more just and equitable environment; advocating for criminal justice reform, affordable housing, hospital and jail diversion and anti- racism training.
+  photo: "/assets/img/candidates/kevindaryan-lujan.jpg"
+  links:
+    - text: "Website"
+      url: "https://lujan4newburgh.com/"
+      icon: "external-link"
+    - text: "Facebook"
+      url: "https://www.facebook.com/kevindaryan.lujan.2025"
+      icon: "facebook"
+    - text: "Instagram"
+      url: "https://instagram.com/kevindaryan"
+      icon: "instagram"
+    - text: "Donate"
+      url: "https://www.paypal.com/donate?hosted_button_id=WAJP8LHUUWDTY"
+      icon: "heart"
+
+- name: "Stephen Hunter"
+  position_running_for: "County Legislator, District 16"
+  bio:  |
+    Stephen is a proud resident of the Town of Newburgh. Born in Newburgh and raised in Blooming Grove, Stephen attended and graduated from Monroe-Woodbury High School.
+
+    After high school, Stephen earned his Bachelor’s degree in Human Resource Management from Boston College. He later furthered his education at Columbia University, where he received his Master’s degree in Organizational Psychology.
+
+    Processionally he has worked as a Human Resources Executive for over 15 years. Throughout his career, Stephen has held senior leadership positions at major organizations including Paramount and LVMH. As Vice President of Human Resources at Paramount, he provided strategic direction and oversight for over 900 employees, implementing programs to enhance workplace equity, leadership development, and organizational effectiveness.
+
+    A resident of the Town of Newburgh, Stephen is actively involved in the community and serves on the Board of Directors for the Orange County Land Trust. His deep roots in Orange County, combined with his extensive professional experience in problem-solving, strategic planning, and organizational development, give him a unique perspective and ability to take on the challenges and opportunities facing our community."
+  photo: "/assets/img/candidates/stephen-hunter.jpeg"
+  links:
+    - text: "Website"
+      url: "https://www.hunterfororangecounty.com/"
+      icon: "external-link"
+    - text: "Facebook"
+      url: "https://m.facebook.com/61573575598353/"
+      icon: "facebook"
+    - text: "Instagram"
+      url: "https://www.instagram.com/hunterfornewburgh?igsh=c2x3eTZiZW1oYzFz"
+      icon: "instagram"
+    - text: "Bluesky"
+      url: "https://bsky.app/profile/hunterfororangecounty.com"
+      icon: "bluesky"
+    - text: "Donate"
+      url: "https://secure.actblue.com/donate/stephen-hunter"
+      icon: "heart"

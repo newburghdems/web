@@ -1,0 +1,24 @@
+<section class="hero-bg-image relative bg-cover bg-center text-white">
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="relative container mx-auto px-6 py-16 sm:py-24 lg:py-32">
+        <div class="md:flex md:items-center md:gap-x-8 lg:gap-x-12">
+
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="font-merriweather text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                    {{ site.data.i18n[page.lang].home.hero.title }}
+                    <span class="text-dem-blue-100">{{ site.data.i18n[page.lang].home.hero.subtitle }}</span>
+                </h1>
+                <p class="mt-6 text-lg sm:text-xl text-gray-200 leading-relaxed font-inter">
+                    {{ site.data.i18n[page.lang].shared.mission }}
+                </p>
+                <p class="mt-6 text-lg sm:text-xl text-gray-200 leading-relaxed font-inter">
+                    <a href="{{ 'about/' | localize_url }}" class="underline hover:text-gray-300">{{ site.data.i18n[page.lang].home.hero.learn_more }}</a>
+                </p>
+            </div>
+
+
+            {% include home/hero/next_committee_meeting.html %}
+        </div>
+    </div>
+</section>

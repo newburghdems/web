@@ -1,0 +1,235 @@
+<section class="mt-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 pb-8">
+            <div class="group bg-light-gray rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:shadow-xl border border-transparent hover:border-dem-blue-200 flex flex-col">
+                <div class="flex items-center mb-4">
+                    <div class="bg-dem-blue-100 p-3 rounded-full group-hover:bg-dem-blue-200 transition-colors duration-300 mr-4 flex-shrink-0">
+                        <i data-lucide="user-check" class="h-8 w-8 text-dem-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300">
+                        {{ site.data.i18n[page.lang].voter_resources.register_title }}
+                    </h3>
+                </div>
+                <p class="font-inter text-gray-700 mb-4 flex-grow">
+                    {{ site.data.i18n[page.lang].voter_resources.register_description }}
+                </p>
+                <ul class="space-y-2 font-inter text-sm">
+                    <li>
+                        <a href="https://dmv.ny.gov/more-info/electronic-voter-registration-application" target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.nys_online_voter_registration }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://elections.ny.gov/system/files/documents/2025/04/2025-vr-form-english-_fillable_.pdf"
+                           target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.nys_voter_registration_form }} (PDF)
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://voterlookup.elections.ny.gov/" target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.nys_check_your_registration_status }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.orangecountygov.com/974/Voter-Information" target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.orange_county_voter_registration_info }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="group bg-light-gray rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:shadow-xl border border-transparent hover:border-dem-blue-200 flex flex-col">
+                <div class="flex items-center mb-4">
+                    <div class="bg-dem-blue-100 p-3 rounded-full group-hover:bg-dem-blue-200 transition-colors duration-300 mr-4 flex-shrink-0">
+                        <i data-lucide="vote" class="h-8 w-8 text-dem-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300">
+                        {{ site.data.i18n[page.lang].voter_resources.cast_your_ballot_title }}
+                    </h3>
+                </div>
+                <p class="font-inter text-gray-700 mb-4 flex-grow">
+                    {{ site.data.i18n[page.lang].voter_resources.cast_your_ballot_description }}
+                </p>
+                <ul class="space-y-2 font-inter text-sm">
+                    <li>
+                        <a href="https://www.orangecountygov.com/1953/Early-Voting-Information" target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.orange_county_early_voting }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://elections.ny.gov/request-ballot" target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.nys_absentee_voting_information }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.orangecountygov.com/793/Absentee-Early-Ballot-by-Mail-Voting"
+                           target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.orange_county_absentee_ballot_info }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="group bg-light-gray rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:shadow-xl border border-transparent hover:border-dem-blue-200 flex flex-col">
+                <div class="flex items-center mb-4">
+                    <div class="bg-dem-blue-100 p-3 rounded-full group-hover:bg-dem-blue-200 transition-colors duration-300 mr-4 flex-shrink-0">
+                        <i data-lucide="map-pin" class="h-8 w-8 text-dem-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300">
+                        {{ site.data.i18n[page.lang].voter_resources.election_day_title }}
+                    </h3>
+                </div>
+                <p class="font-inter text-gray-700 mb-4 flex-grow">
+                    {{ site.data.i18n[page.lang].voter_resources.election_day_description }}
+                </p>
+                <ul class="space-y-2 font-inter text-sm">
+                    <li>
+                        <a href="https://voterlookup.elections.ny.gov/" target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.nys_polling_place }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.orangecountygov.com/968/Polling-Places" target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.orange_county_polling_place }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <p class="text-gray-600">
+                            {{ site.data.i18n[page.lang].voter_resources.polling_times }}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="group bg-light-gray rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:shadow-xl border border-transparent hover:border-dem-blue-200 flex flex-col">
+                <div class="flex items-center mb-4">
+                    <div class="bg-dem-blue-100 p-3 rounded-full group-hover:bg-dem-blue-200 transition-colors duration-300 mr-4 flex-shrink-0">
+                        <i data-lucide="calendar-days" class="h-8 w-8 text-dem-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300">
+                        {{ site.data.i18n[page.lang].voter_resources.important_dates_title }}
+                    </h3>
+                </div>
+                <p class="font-inter text-gray-700 mb-4 flex-grow">
+                    {{ site.data.i18n[page.lang].voter_resources.important_dates_description }}
+                </p>
+                <ul class="space-y-2 font-inter text-sm">
+                    <li>
+                        <a href="https://www.elections.ny.gov/VotingDeadlines.html" target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.nys_key_dates }}
+                            <i data-lucide="external-link"
+                                                              class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://elections.ny.gov/system/files/documents/2024/12/2025-political-calendar-quad-fold-final-12.5.2024.pdf"
+                           target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.orange_county_boe_calendar }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="group bg-light-gray rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:shadow-xl border border-transparent hover:border-dem-blue-200 flex flex-col">
+                <div class="flex items-center mb-4">
+                    <div class="bg-dem-blue-100 p-3 rounded-full group-hover:bg-dem-blue-200 transition-colors duration-300 mr-4 flex-shrink-0">
+                        <i data-lucide="shield-check" class="h-8 w-8 text-dem-blue-500"></i></div>
+                    <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300">
+                        {{ site.data.i18n[page.lang].voter_resources.know_your_rights_title }}
+                    </h3>
+                </div>
+                <p class="font-inter text-gray-700 mb-4 flex-grow">
+                    {{ site.data.i18n[page.lang].voter_resources.know_your_rights_description }}
+                </p>
+                <ul class="space-y-2 font-inter text-sm">
+                    <li>
+                        <a href="https://vote.nyc/page/voters-rights" target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.nys_voter_bill_of_rights }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.nyclu.org/resources/know-your-rights" target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">
+                            {{ site.data.i18n[page.lang].voter_resources.aclu_ny_voting_rights }}
+                            <i data-lucide="external-link"
+                               class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i>
+                        </a>
+                    </li>
+                    <li><p class="text-gray-600">{{ site.data.i18n[page.lang].voter_resources.voting_rights_message }}:
+                        <strong
+                                class="font-semibold">866-OUR-VOTE</strong>.</p></li>
+                </ul>
+            </div>
+
+            <div class="group bg-light-gray rounded-lg shadow-lg p-6 transition-all duration-300 ease-in-out hover:shadow-xl border border-transparent hover:border-dem-blue-200 flex flex-col">
+                <div class="flex items-center mb-4">
+                    <div class="bg-dem-blue-100 p-3 rounded-full group-hover:bg-dem-blue-200 transition-colors duration-300 mr-4 flex-shrink-0">
+                        <i data-lucide="landmark" class="h-8 w-8 text-dem-blue-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300">
+                        {{ site.data.i18n[page.lang].voter_resources.official_election_resources_title }}
+                    </h3>
+                </div>
+                <p class="font-inter text-gray-700 mb-4 flex-grow">
+                    {{ site.data.i18n[page.lang].voter_resources.official_election_resources_description }}
+                </p>
+                <ul class="space-y-2 font-inter text-sm">
+                    <li><a href="https://www.elections.ny.gov/" target="_blank" rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">{{
+                        site.data.i18n[page.lang].voter_resources.nys_boe }} <i data-lucide="external-link"
+                                                                                class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i></a>
+                    </li>
+                    <li><a href="https://www.orangecountygov.com/783/Board-of-Elections" target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-dem-blue-600 hover:text-dem-blue-800 hover:underline inline-flex items-center group/link">{{
+                        site.data.i18n[page.lang].voter_resources.orange_county_boe }} <i data-lucide="external-link"
+                                                                                          class="ml-1.5 h-3.5 w-3.5 opacity-70 group-hover/link:opacity-100"></i></a>
+                    </li>
+                    <li><p class="text-gray-600 pt-2"><strong>{{
+                        site.data.i18n[page.lang].voter_resources.orange_county_boe_contact }}:</strong><br>111 Cantor
+                        Drive, Goshen, NY 10924<br>(845) 360-6500</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

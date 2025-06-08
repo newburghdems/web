@@ -1,0 +1,58 @@
+<footer class="bg-gray-800 text-gray-300 py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-4">
+            <a href="/" class="text-xl font-semibold hover:text-white">Town of Newburgh Democratic Committee</a>
+        </div>
+        <div class="space-x-4 mb-4">
+            {%- for item in site.data.navigation.items -%}
+            {%- assign item_text = site.data.i18n[page.lang].nav[item.i18n_key] | default: item.i18n_key -%}
+            {%- assign item_url = item.url -%}
+            {%- unless item.external -%}
+            {%- assign item_url = item.url | relative_url -%}
+            {%- endunless -%}
+
+            {%- if item.sublinks -%}
+            {%- for sublink in item.sublinks -%}
+            {%- assign sublink_text = site.data.i18n[page.lang].nav[sublink.i18n_key] | default: sublink.i18n_key -%}
+            {%- assign sublink_url = sublink.url | relative_url -%}
+            <a href="{{ sublink_url }}" class="hover:text-white">{{ sublink_text }}</a>
+            {%- endfor -%}
+
+            {%- else -%}
+            <a href="{{ item_url }}" class="hover:text-white" {%- if item.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item_text }}</a>
+            {%- endif -%}
+            {%- endfor -%}
+            </div>
+
+        <div class="flex items-center justify-center space-x-4 mb-4">
+            <a href="https://www.instagram.com/newburghtowndems" target="_blank" rel="noopener noreferrer" class="hover:text-white" title="{{ site.data.i18n[page.lang].shared.follow_us_on }} Instagram">
+                <i data-lucide="instagram" class="inline-block h-5 w-5"></i>
+            </a>
+
+            <a href="https://bsky.app/profile/newburghdems.org" target="_blank" rel="noopener noreferrer" class="hover:text-white" title="{{ site.data.i18n[page.lang].shared.follow_us_on }} Bluesky">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                </svg>
+            </a>
+        </div>
+        <p class="text-sm mb-2">&copy; <span id="currentYear"></span> Town of Newburgh Democratic Committee. {{ site.data.i18n[page.lang].footer.all_rights_reserved }}</p>
+        <p class="text-xs">{{ site.data.i18n[page.lang].footer.paid_for_by }} Town of Newburgh Democratic Committee.</p>
+        <p class="text-xs mt-1">89 Lakeside Rd, Newburgh, NY 12550</p>
+        <p class="text-xs mt-1"><a href="mailto:townofnewburghdems@gmail.com">townofnewburghdems@gmail.com</a></p>
+    </div>
+</footer>
+
+<script>
+  // Lucide icons activation
+  lucide.createIcons();
+
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Set current year in footer
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>

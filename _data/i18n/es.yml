@@ -1,0 +1,200 @@
+# Shared elements
+shared:
+  mission: "Dedicados a involucrar a nuestra comunidad, apoyar a los candidatos demócratas y defender los valores demócratas para un Pueblo de Newburgh más inclusivo y próspero."
+  first_name: "Nombre"
+  last_name: "Apellido"
+  email_address: "Correo Electrónico"
+  follow_us_on: "Síguenos en"
+
+# Navigation
+nav:
+  home: "Inicio"
+  about: "Sobre"
+  get_involved: "Participa"
+  representatives: "Representantes"
+  candidates: "Nuestros Candidatos"
+  elected_officials: "Funcionarios Electos"
+  voter_resources: "Guía Voto"
+  donate: "Donar"
+
+# Footer
+footer:
+  all_rights_reserved: "Todos los derechos reservados."
+  paid_for_by: "Pagado por"
+  instagram: "Instagram" # Alt text for icon
+  bluesky: "Bluesky" # Alt text for icon
+
+# Home Page
+home:
+  hero:
+    title: "Construyendo Juntos un Futuro más Brillante Para"
+    subtitle: "Nuestra Ciudad."
+    learn_more: "Aprende más sobre nuestra misión."
+    signup_form:
+      title: "¡Mantente Conectado!"
+      button: "Suscríbete"
+  cta:
+    vote_title: "Regístrate para Votar"
+    vote_subtitle: "Haz oír tu voz en cada elección."
+    volunteer_title: "Hazte Voluntario"
+    volunteer_subtitle: "Únete a nuestro equipo para marcar la diferencia."
+    donate_title: "Apoya Nuestra Causa"
+    donate_subtitle: "Cada contribución ayuda a construir un Newburgh más fuerte."
+  upcoming_events:
+    title: "Próximos Eventos"
+    next_committee_meeting: "Próxima Reunión del Comité"
+    next_committee_meeting_description: "Nuestras reuniones del comité están abiertas al público. ¡Únete a nosotros para discutir asuntos locales, planificar eventos y ayudar a dar forma al futuro de Newburgh!"
+    date: "Fecha"
+    time: "Hora"
+    location: "Ubicación"
+    also_coming_up: "Próximos Eventos"
+    no_upcoming_events: "No hay eventos programados en este momento. Por favor, vuelve a consultar pronto."
+    view_all_events: "Ver Todos los Eventos"
+    view_full_calendar: "Ver Calendario Completo"
+    loading: "Cargando eventos..."
+    error_loading: "Error al cargar los eventos."
+    could_not_load_events: "No se pudieron cargar los eventos"
+    no_calendar_url: "URL del calendario no proporcionada."
+    failed_to_fetch_ics: "Error al obtener el archivo ICS"
+    error_parsing_ics: "Error al analizar los datos del ICS"
+    no_title: "Evento sin título"
+    next_committee_meeting_not_found: "La próxima reunión del comité se anunciará pronto. ¡Consulta nuestro calendario completo para otros eventos!"
+
+  candidate_spotlight:
+    title: "Candidatos Destacados"
+    subtitle: "Conoce a algunos de los candidatos demócratas que trabajan para ti."
+    view_all: "Ver Todos los Candidatos"
+    no_candidates_title: "Información de Candidatos Próximamente"
+    no_candidates_subtitle_1: "Los perfiles de los candidatos se presentarán aquí a medida que se acerque la temporada electoral."
+    no_candidates_subtitle_2: "Por favor, vuelve a consultar pronto o"
+    no_candidates_subtitle_3: "si estás interesado en postularte para un cargo."
+    get_in_touch_link_text: "ponte en contacto"
+
+  social_spotlight:
+    title: "Síguenos en las Redes Sociales"
+    subtitle: "Mantente al día con las últimas noticias y eventos."
+  bluesky_updates:
+    error_loading: "No se pudieron cargar las actualizaciones. Por favor, inténtalo de nuevo más tarde."
+    no_posts: "No se encontraron publicaciones con imágenes en este momento."
+
+# About Page
+about:
+  our_mission: "Nuestra Misión"
+  our_role: "Nuestro Papel en la Comunidad"
+  role_paragraph_1: "El Comité Demócrata del Pueblo de Newburgh es la organización oficial del Partido Demócrata que representa a los demócratas registrados en el Pueblo de Newburgh, Condado de Orange, Nueva York."
+  role_paragraph_2: "Trabajamos para reclutar y apoyar a candidatos demócratas para cargos locales, del condado, estatales y federales; aumentar la participación electoral; y promover los valores y principios demócratas dentro de nuestra comunidad."
+  role_paragraph_3: "Estamos comprometidos con la transparencia, la inclusión y la participación de base."
+  committee:
+    title: "Miembros del Comité"
+    subtitle: "Conoce a los dedicados voluntarios que lideran nuestros esfuerzos."
+    no_committee_members: "La información sobre los miembros del comité se actualizará pronto."
+  get_involved:
+    title: "¿Listo para Marcar la Diferencia?"
+    subtitle: "Tu participación es clave para nuestro éxito. Hay muchas maneras de contribuir a la causa demócrata en Newburgh."
+    button_text: "Descubre Cómo Participar"
+
+# Get Involved Page
+get_involved:
+  title: "Participa con los Demócratas de Newburgh"
+  subtitle: "¡Tu tiempo, talento y pasión pueden marcar una verdadera diferencia en nuestra comunidad! Hay muchas maneras de involucrarse con el Comité Demócrata del Pueblo de Newburgh."
+  volunteer_options:
+    title: "Oportunidades de Voluntariado"
+    subtitle: "Encuentra una manera de contribuir que se ajuste a tus intereses y disponibilidad:"
+  signup_form:
+    title: "¡Regístrate para Ser Voluntario!"
+    subtitle: "Completa el formulario a continuación y nos pondremos en contacto contigo sobre cómo puedes ayudar."
+    help_method: "¿Cómo te gustaría ayudar?"
+    help_method_placeholder: "Ej: tocar puertas, hacer llamadas telefónicas, organizar eventos, etc."
+    button: "Enviar Información"
+  other_ways:
+    title: "Otras Formas de Apoyar"
+    meetings_title: "Asiste a Nuestras Reuniones"
+    meetings_description: "Nuestras reuniones del comité suelen ser mensuales y están abiertas al público. Es una excelente manera de mantenerse informado y conocer a otros demócratas."
+    meetings_button: "Ver Próximas Reuniones"
+    donate_title: "Haz una Donación"
+    donate_description: "Las contribuciones financieras nos ayudan a apoyar a los candidatos, organizar eventos y llevar a cabo nuestras actividades de divulgación. Cada dólar cuenta."
+    donate_button: "Donar de Forma Segura en Línea"
+    run_for_office_title: "Considera Postularte para un Cargo"
+    run_for_office_description: "¿Te apasiona el servicio público? Podríamos necesitar candidatos como tú. Contáctanos para obtener más información sobre cómo postularte."
+    run_for_office_button: "Envíanos un Correo Electrónico para Más Información"
+    social_title: "Difunde la Palabra"
+    social_description: "Síguenos en las redes sociales y comparte nuestras publicaciones con tus amigos y familiares. Ayúdanos a ampliar nuestro alcance y mantener informada a la comunidad."
+
+# Elected Officials Page
+elected_officials:
+  position: "Cargo"
+  term: "Mandato"
+  term_ends: "El mandato termina"
+  official_website: "Sitio Web Oficial"
+  level_unavailable: "La información para este nivel de gobierno no está disponible actualmente."
+  representative_unavailable: "La información sobre los representantes electos se actualizará pronto."
+
+# Voter Resources Page
+voter_resources:
+  register_title: "Regístrate para Votar o Actualiza tu Registro"
+  register_description: "Asegúrate de que tu registro de votante esté actualizado. Puedes registrarte en línea, por correo o verificar tu estado actual."
+  nys_online_voter_registration: "Solicitud de registro de votante electrónico del DMV de NYS"
+  nys_voter_registration_form: "Formulario de registro de votante de NYS (PDF)"
+  nys_check_your_registration_status: "Verifica tu estado de registro (NYS)"
+  orange_county_voter_registration_info: "Información de registro de votantes del Condado de Orange"
+
+  cast_your_ballot_title: "Emite tu Voto"
+  cast_your_ballot_description: "Nueva York ofrece varias formas de votar, incluyendo la votación anticipada, la votación en ausencia (por correo) y la votación el día de las elecciones."
+  orange_county_early_voting: "Información sobre la votación anticipada del Condado de Orange"
+  nys_absentee_voting_information: "Información sobre la votación en ausencia de NYS"
+  orange_county_absentee_ballot_info: "Información sobre la boleta de voto en ausencia del Condado de Orange"
+
+  election_day_title: "Día de las Elecciones: Lugares de Votación"
+  election_day_description: "Encuentra tu lugar de votación designado para el día de las elecciones. ¡Recuerda que los lugares de votación anticipada pueden ser diferentes!"
+  nys_polling_place: "Encuentra tu lugar de votación (NYS)"
+  orange_county_polling_place: "Lugares de votación del Condado de Orange"
+  polling_times: "Los lugares de votación en Nueva York generalmente abren de 6 AM a 9 PM para las elecciones primarias y generales."
+
+  important_dates_title: "Fechas y Plazos Importantes"
+  important_dates_description: "Mantente informado sobre los plazos de registro de votantes, las fechas de votación anticipada y los días de elecciones."
+  nys_key_dates: "Fechas y plazos clave de votación de NYS"
+  orange_county_boe_calendar: "Calendario de la Junta Electoral del Condado de Orange"
+
+  know_your_rights_title: "Conoce tus Derechos como Votante"
+  know_your_rights_description: "Familiarízate con tus derechos como votante en Nueva York para asegurar una experiencia de votación justa y accesible."
+  nys_voter_bill_of_rights: "Declaración de Derechos del Votante de NYS"
+  aclu_ny_voting_rights: "Derechos de voto de la ACLU de NY"
+  voting_rights_message: "Si encuentras algún problema o tienes preguntas el día de las elecciones, llama a la línea directa de protección electoral al"
+
+  official_election_resources_title: "Recursos Electorales Oficiales"
+  official_election_resources_description: "Para obtener la información más autorizada y actualizada, consulta siempre los sitios web oficiales de la junta electoral."
+  nys_boe: "Junta Electoral del Estado de Nueva York (NYS BOE)"
+  orange_county_boe: "Junta Electoral del Condado de Orange"
+  orange_county_boe_contact: "Contacto de la Junta Electoral del Condado de Orange"
+
+  # Assistance Section
+  assistance_title: "¿Necesitas Ayuda o Tienes Preguntas?"
+  assistance_description: "Entendemos que el proceso de votación a veces puede ser confuso. Si tienes alguna pregunta sobre el registro, cómo votar o cualquier otro asunto relacionado con las elecciones, no dudes en ponerte en contacto. Estamos aquí para ayudar a cada votante elegible en Newburgh a ejercer su derecho."
+  assistance_button: "Contáctanos"
+
+events:
+  calendar:
+    title: Calendario de Eventos del Comité y la Comunidad
+    description: Descubre lo que está sucediendo con el Comité Demócrata del Pueblo de Newburgh. Nuestro calendario incluye reuniones, foros de candidatos, campañas de voluntariado y otras actividades comunitarias. ¡Animamos a todos a participar!
+    tip: Consejo
+    tip_description: Puedes hacer clic en un evento del calendario para ver más detalles o agregarlo a tu propio Google Calendar. Si tienes problemas para ver el calendario incrustado, puedes
+    tip_action: abrirlo directamente en una nueva pestaña
+  footer:
+    title: ¿Quieres agregar un evento o tienes alguna pregunta?
+    description: Si conoces algún evento local que se alinee con nuestros valores o tienes preguntas sobre un próximo evento del comité, no dudes en contactarnos.
+    button_text: Contáctanos
+
+thank_you:
+  header: ¡Estamos emocionados de tenerte con nosotros! Te mantendremos informado sobre los próximos eventos, noticias de nuestros candidatos y las formas en que puedes contribuir a nuestra comunidad.
+  whats_next: ¿Qué Sigue?
+  while_you_wait: Mientras esperas nuestra próxima actualización, aquí tienes algunas formas de mantenerte conectado y tener un impacto
+  get_involved: Participa
+  discover: Descubre varias formas en las que puedes ser voluntario y apoyar nuestra causa.
+  upcoming_events: Próximos Eventos
+  upcoming_events_cta: Consulta nuestro calendario para reuniones y encuentros comunitarios.
+  our_candidates: Nuestros Candidatos
+  our_candidates_cta: Conoce y apoya a nuestros candidatos demócratas.
+  donate: Donar
+  donate_cta: Ayuda a impulsar nuestros esfuerzos con una contribución.
+  dont_forget: No olvides seguirnos en las redes sociales para las últimas actualizaciones
+  final_thank_you: ¡Gracias por ser parte de nuestra comunidad demócrata en Newburgh!

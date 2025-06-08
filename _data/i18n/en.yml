@@ -1,0 +1,188 @@
+nav:
+  home: "Home"
+  about: "About Us"
+  get_involved: "Get Involved"
+  representatives: "Our Representatives"
+  candidates: "Candidates"
+  elected_officials: "Elected Officials"
+  voter_resources: "Voter Resources"
+  donate: "Donate"
+
+shared:
+  mission: The Town of Newburgh Democratic Committee is dedicated to building Democratic power through strong voter engagement and support for our local candidates.
+  first_name: First Name
+  last_name: Last Name
+  email_address: Email Address
+  follow_us_on: Follow Us on
+
+home:
+  hero:
+    title: Building a Brighter Future for Our Town,
+    subtitle: Together.
+    learn_more: Learn more
+    signup_form:
+      title: Sign Up for Updates
+      button: Stay Updated
+  cta:
+    vote_title: Vote
+    vote_subtitle: Make Your Voice Heard
+    volunteer_title: Volunteer
+    volunteer_subtitle: Join Our Team
+    donate_title: Donate
+    donate_subtitle: Support Our Mission
+  upcoming_events:
+    no_title: No Title
+    no_calendar_url: Calendar URL is not provided.
+    failed_to_fetch_ics: Failed to fetch ICS
+    error_parsing_ics: Error fetching or parsing ICS data
+    loading: Loading upcoming events...
+    could_not_load_events: Could not load events
+    no_upcoming_events: No upcoming events found at the moment.
+    view_full_calendar: View Full Calendar
+    next_committee_meeting: Next Committee Meeting
+    next_committee_meeting_not_found: No upcoming committee meeting scheduled in the near future. Please check back later or view the full calendar.
+    next_committee_meeting_description: Join us to discuss local issues, plan actions, and connect with fellow Democrats. All are welcome!
+    date: Date
+    time: Time
+    location: Location
+    also_coming_up: Upcoming Events
+    no_other_events: No other events scheduled at the moment.
+    view_all_events: View All Events
+  candidate_spotlight:
+    title: Meet Our Candidates
+    subtitle: Get to know the Democrats working to represent our community.
+    view_all: View All Candidates
+    no_candidates_title: Candidate information will be featured here soon.
+    no_candidates_subtitle_1: Please check back, or
+    no_candidates_subtitle_2: get involved
+    no_candidates_subtitle_3: to support our future candidates!
+  social_spotlight:
+    title: Connect With Us on Social Media
+    subtitle: Follow our Instagram or Bluesky accounts for the latest updates, event photos, and community highlights!
+  bluesky_updates:
+    title: "Latest Updates"
+    loading: "Loading latest updates..."
+    check_back: "Please check back soon"
+    view_all: "View all"
+
+about:
+  our_mission: Our Mission
+  our_role: Our Primary Role
+  role_paragraph_1: We focus on increasing Democratic voter turnout in every election. This means registering new voters, educating the community about issues and candidates, and mobilizing residents through canvassing, phone banking, social media and community events.
+  role_paragraph_2: We identify, support, and help elect candidates who are committed to representing our values and needs of our community. We work to ensure the local government reflects the people it serves.
+  role_paragraph_3: Together we are creating a stronger, more representative Town of Newburgh.
+  committee:
+    title: Our Committee Members
+    subtitle: Meet the dedicated individuals serving on our committee.
+    no_committee_members: Committee member information is currently unavailable. Please check back soon.
+  get_involved:
+    title: Ready to Make a Difference?
+    subtitle: The Town of Newburgh Democratic Committee thrives on the energy and dedication of our community members. Your involvement is crucial to our success.
+    button_text: Learn How to Get Involved
+
+get_involved:
+  title: Get Involved & Make a Difference
+  subtitle: The Town of Newburgh Democratic Committee thrives on the energy and dedication of our community members. Your involvement is crucial to building Democratic power, supporting our candidates, and creating a more inclusive and prosperous Newburgh for everyone. Whether you have a few hours a month or can make a more significant commitment, there's a place for you here.
+  volunteer_options:
+    title: Volunteer Your Time & Skills
+    subtitle: Volunteers are the backbone of our committee. Your help allows us to reach more voters and support our candidates effectively.
+  signup_form:
+    title: Ready to Volunteer? Sign Up Today!
+    subtitle: Fill out the form below, and a member of our committee will get in touch with you soon to discuss how you can best contribute.
+    help_method: How would you like to help? (Optional)
+    help_method_placeholder: e.g., Canvassing, phone banking, event support...
+    button: Join Us
+  other_ways:
+    title: More Ways to Support Our Work
+    meetings_title: Attend Our Meetings & Events
+    meetings_description: Join us for committee meetings, town halls, and community events. It's a great way to stay informed, share your ideas, and connect with fellow Democrats.
+    meetings_button: View Upcoming Events
+    donate_title: Donate to the Committee
+    donate_description: Your financial contribution, no matter the size, helps us fund essential campaign materials, voter outreach, events, and operational costs. Every dollar makes a difference!
+    donate_button: Donate Securely via ActBlue
+    run_for_office_title: Consider Running for Office
+    run_for_office_description: Are you passionate about public service and dedicated to Democratic values? We are always looking for engaged community members to run for local office. We can provide guidance and support.
+    run_for_office_button: Contact Us to Learn More
+    social_title: Stay Informed & Spread the Word
+    social_description: Follow us on social media, share our updates with your network, and talk to your friends and neighbors about the importance of local elections and Democratic engagement.
+
+elected_officials:
+  position: Position
+  term: Term
+  term_ends: Term Ends
+  official_website: Official Website
+  level_unavailable: Information for this level is currently unavailable.
+  representative_unavailable: Information on current representatives is not yet available. Please check back soon.
+
+voter_resources:
+  register_title: Register & Check Status
+  register_description: Ensure you're ready for upcoming elections. Register online, by mail, or check your current registration status. Deadlines apply, so act early!
+  nys_online_voter_registration: NYS Online Voter Registration
+  nys_voter_registration_form: NYS Voter Registration Form
+  nys_check_your_registration_status: Check Your Registration Status (NYS)
+  orange_county_voter_registration_info: Orange County Voter Registration Info
+
+  cast_your_ballot_title: Ways to Cast Your Ballot
+  cast_your_ballot_description: "New York State offers several convenient ways to vote: Early Voting, Absentee Voting (if eligible), and In-Person voting on Election Day."
+  orange_county_early_voting: Early Voting in Orange County
+  nys_absentee_voting_information: NYS Absentee Voting Information
+  orange_county_absentee_ballot_info: Orange County Absentee Ballot Info
+
+  election_day_title: Election Day Logistics
+  election_day_description: Be prepared for Election Day! Find your polling place, check hours, and know what to expect.
+  nys_polling_place: Find Your NYS Polling Place
+  orange_county_polling_place: Orange County Poll Site Locator
+  polling_times: Polls in NY are generally open from 6 AM to 9 PM for Primary and General Elections. Always verify specific times for special elections.
+
+  important_dates_title: Important Dates
+  important_dates_description: Stay informed about critical election deadlines for registration, absentee ballot requests, and voting periods.
+  nys_key_dates: NYS Board of Elections - Key Dates
+  orange_county_boe_calendar: Orange County Board of Elections Calendar
+
+  know_your_rights_title: Know Your Voter Rights
+  know_your_rights_description: Understand your rights as a voter in New York State to ensure a fair and accessible voting experience.
+  nys_voter_bill_of_rights: NYS Voter Bill of Rights
+  aclu_ny_voting_rights: ACLU of NY - Voting Rights
+  voting_rights_message: If you encounter issues, call the Election Protection Hotline
+
+  official_election_resources_title: Official Election Resources
+  official_election_resources_description: Direct links to state and local election authorities for the most comprehensive and up-to-date information.
+  nys_boe: New York State Board of Elections
+  orange_county_boe: Orange County Board of Elections
+  orange_county_boe_contact: Orange County BOE Contact
+
+  assistance_title: Questions or Need Assistance?
+  assistance_description: Voting is your fundamental right, and we're here to help you exercise it. If you have questions about the voting process or need assistance, please don't hesitate to reach out.
+  assistance_button: Contact Us
+
+events:
+  calendar:
+    title: Committee & Community Events Calendar
+    description: Find out what's happening with the Town of Newburgh Democratic Committee. Our calendar includes meetings, candidate forums, volunteer drives, and other community activities. We encourage everyone to get involved!
+    tip: Tip
+    tip_description: You can click on an event in the calendar to see more details or add it to your own Google Calendar. If you have trouble viewing the embedded calendar, you can
+    tip_action: open it directly in a new tab
+  footer:
+    title: Want to add an event or have a question?
+    description: If you know of a local event that aligns with our values or have questions about an upcoming committee event, please don't hesitate to reach out.
+    button_text: Contact Us
+
+footer:
+  all_rights_reserved: All rights reserved.
+  paid_for_by: Paid for by the
+
+thank_you:
+  header: We're excited to have you with us! We'll keep you informed about upcoming events, news from our candidates, and ways you can contribute to our community.
+  whats_next: What's Next?
+  while_you_wait: While you wait for our next update, here are a few ways to stay connected and make an impact
+  get_involved: Get Involved
+  discover: Discover various ways you can volunteer and support our cause.
+  upcoming_events: Upcoming Events
+  upcoming_events_cta: Check out our calendar for meetings and community gatherings.
+  our_candidates: Our Candidates
+  our_candidates_cta: Learn about and support our Democratic candidates.
+  donate: Donate
+  donate_cta: Help fuel our efforts with a contribution.
+  dont_forget: Don't forget to follow us on social media for the latest updates
+  final_thank_you: Thank you for being a part of our Democratic community in Newburgh!
+

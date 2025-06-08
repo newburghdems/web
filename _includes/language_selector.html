@@ -1,0 +1,52 @@
+{% comment %}
+File: _includes/language_selector.html
+Description: Renders a language switcher link, absolutely positioned below the main nav's logo area.
+Assumes:
+- English pages are at the root (e.g., /about/).
+- Spanish pages are under an /es/ prefix (e.g., /es/about/).
+- SVG icons are located at /assets/img/lang/us.svg and /assets/img/lang/es.svg.
+- Page front matter contains 'lang: en' or 'lang: es'.
+- Main navigation has a height of h-20 (5rem or 80px).
+- Main navigation container uses px-4 sm:px-6 lg:px-8 for padding.
+{% endcomment %}
+
+{% assign current_lang = page.lang | default: site.lang | default: "en" %}
+{% assign current_path = page.url %}
+
+{% comment %} Determine the target language details and path {% endcomment %}
+{% if current_lang == "es" %}
+{% assign target_lang_code = "en" %}
+{% assign target_lang_name = "English" %}
+{% assign target_lang_icon = "/assets/img/lang/us.svg" | relative_url %}
+
+{% comment %} Construct path for English version from Spanish path {% endcomment %}
+{% if current_path == "/es/" or current_path == "/es/index.html" %}
+{% assign target_path = "/" | relative_url %}
+{% else %}
+{% assign target_path = current_path | remove_first: "/es" | relative_url %}
+{% endif %}
+{% else %}
+{% assign target_lang_code = "es" %}
+{% assign target_lang_name = "Español" %}
+{% assign target_lang_icon = "/assets/img/lang/es.svg" | relative_url %}
+
+{% comment %} Construct path for Spanish version from English path {% endcomment %}
+{% if current_path == "/" or current_path == "/index.html" %}
+{% assign target_path = "/es/" | relative_url %}
+{% else %}
+{% assign target_path = current_path | prepend: "/es" | relative_url %}
+{% endif %}
+{% endif %}
+
+<div class="language-selector-wrapper absolute top-22 md:top-24 z-5 pointer-events-none w-full">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-end">
+            <div class="bg-white rounded-full md:rounded-none shadow-lg border border-dem-blue-200 hover:border-dem-blue-300 transition-all duration-150 ease-in-out pointer-events-auto">
+                <a href="{{ target_path }}" title="Switch to {{ target_lang_name }}" class="flex items-center text-sm font-medium text-gray-700 hover:text-dem-blue-700 md:px-3 md:py-1.5 focus:outline-none focus:ring-2 focus:ring-dem-blue-400 focus:ring-opacity-75 rounded-md">
+                    <img src="{{ target_lang_icon }}" alt="{{ target_lang_name }} flag" class="object-cover rounded-full md:rounded-none h-6 w-6 md:h-4 md:w-6 flex-shrink-0">
+                    <span class="whitespace-nowrap hidden md:inline-block md:ml-2">{{ target_lang_name }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

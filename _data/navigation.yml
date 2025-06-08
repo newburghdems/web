@@ -1,0 +1,19 @@
+  items:
+    - i18n_key: "about"
+      url: "about/"
+    - i18n_key: "get_involved"
+      url: "get-involved/"
+    - i18n_key: "representatives"
+      url: "representatives/"
+      sublinks:
+        - i18n_key: "candidates"
+          url: "our-candidates/"
+        - i18n_key: "elected_officials"
+          url: "elected-officials/"
+    - i18n_key: "voter_resources"
+      url: "voter-resources/"
+    - i18n_key: "donate"
+      url: "https://secure.actblue.com/donate/town-of-newburgh-democratic-committee-1"
+      external: true
+      is_button: true
+      icon: "heart"

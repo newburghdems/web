@@ -1,0 +1,149 @@
+<header class="bg-white shadow-md fixed w-full z-10 top-0">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex-shrink-0">
+                <a href="{{ '' | localize_url }}" class="flex items-center space-x-3" title="{{ site.data.i18n[page.lang].nav.home }}">
+                    <img src="{{ '/assets/img/logo.png' | relative_url }}" class="h-12 w-12" alt="{{ site.title }} Logo">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-merriweather text-gray-600 leading-tight">Town of</span>
+                        <span class="font-merriweather font-bold text-2xl text-dem-blue-500 leading-tight -mt-0.5 tracking-tight">Newburgh Democrats</span>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="hidden lg:flex lg:space-x-2 xl:space-x-4 items-center">
+                {% for item in site.data.navigation.items %}
+                  {% assign text = site.data.i18n[page.lang].nav[item.i18n_key] %}
+                  {% assign item_url = item.url %}
+                  {% unless item.external %}
+                    {% assign item_url = item.url | localize_url | relative_url %}
+                  {% endunless %}
+
+                  {% if item.sublinks %}
+                    {% assign parent_is_active = false %}
+                    {% for sublink_item in item.sublinks %}
+                      {% assign sublink_url_relative = sublink_item.url | localize_url | relative_url %}
+                      {% if page.url == sublink_url_relative %}
+                        {% assign parent_is_active = true %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+
+                    <div class="relative group">
+                        <button class="text-sm font-medium rounded-md px-3 py-2 flex items-center
+                                    {% if parent_is_active %}
+                                        bg-dem-blue-50 text-dem-blue-600 hover:bg-dem-blue-100 hover:text-dem-blue-700
+                                    {% else %}
+                                        text-gray-600 hover:text-dem-blue-700 hover:bg-dem-blue-50
+                                    {% endif %}">
+                            {{ text }}
+                            <i data-lucide="chevron-down" class="ml-1 h-4 w-4"></i>
+                        </button>
+                        <div class="absolute left-0 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden group-hover:block">
+                            {% for sublink in item.sublinks %}
+                            {% assign sub_url = sublink.url | localize_url | relative_url %}
+                            {% assign sub_text = site.data.i18n[page.lang].nav[sublink.i18n_key] | default: sublink.title_override %}
+                            <a href="{{ sub_url }}" class="block px-4 py-2 text-sm
+                                            {% if page.url == sub_url %}
+                                                bg-dem-blue-500 text-white font-semibold
+                                            {% else %}
+                                                text-gray-700 hover:bg-gray-100 hover:text-dem-blue
+                                            {% endif %}">
+                                {{ sub_text }}
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% else %}
+                <a href="{{ item_url }}"
+                   class="text-sm font-medium rounded-md
+                              {% if item.is_button %}
+                                bg-oc-orange-dark hover:bg-oc-orange text-white px-4 py-2 inline-flex items-center
+                              {% else %}
+                                px-3 py-2
+                                {% if page.url == item_url %}
+                                  bg-dem-blue-500 text-white
+                                {% else %}
+                                  text-gray-600 hover:text-dem-blue-700 hover:bg-dem-blue-50
+                                {% endif %}
+                              {% endif %}"
+                   {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+
+                    {% if item.icon %}
+                    <i data-lucide="{{ item.icon }}" class="mr-2 h-4 w-4"></i>
+                    {% endif %}
+                    {{ text }}
+                </a>
+                {% endif %}
+                {% endfor %}
+            </nav>
+
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-dem-blue focus:outline-none">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
+        {% for item in site.data.navigation.items %}
+        {% assign text = site.data.i18n[page.lang].nav[item.i18n_key] %}
+        {% assign item_url = item.url %}
+        {% unless item.external %}
+        {% assign item_url = item.url | localize_url | relative_url %}
+        {% endunless %}
+
+        {% if item.sublinks %}
+        {% assign parent_is_active_mobile = false %}
+        {% for sublink_item_mobile in item.sublinks %}
+        {% if page.url == (sublink_item_mobile.url | relative_url) %}
+        {% assign parent_is_active_mobile = true %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
+        <div>
+                    <span class="block text-sm font-medium px-4 py-3
+                        {% if parent_is_active_mobile %}
+                            bg-dem-blue-500 text-white
+                        {% else %}
+                            text-gray-500 hover:bg-gray-100
+                        {% endif %}">{{ text }}</span>
+            <div class="pl-4">
+                {% for sublink in item.sublinks %}
+                {% assign sub_text = site.data.i18n[page.lang].nav[sublink.i18n_key] | default: sublink.title_override %}
+                <a href="{{ sublink.url | localize_url | relative_url }}" class="block text-sm font-medium px-4 py-3
+                                {% if page.url == (sublink.url | relative_url) %}
+                                    bg-dem-blue-500 text-white font-semibold
+                                {% else %}
+                                    text-gray-600 hover:bg-gray-100 hover:text-dem-blue
+                                {% endif %}">
+                    {{ sub_text }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+        <a href="{{ item_url }}"
+           class="block text-sm font-medium
+                      {% if item.is_button %}
+                        bg-oc-orange-dark hover:bg-oc-orange text-white px-4 py-3 text-center
+                      {% else %}
+                        px-4 py-3
+                        {% if page.url == item.url %}
+                          bg-dem-blue-500 text-white
+                        {% else %}
+                          text-gray-600 hover:bg-gray-100 hover:text-dem-blue
+                        {% endif %}
+                      {% endif %}"
+           {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+
+            {% if item.icon and item.is_button %}
+            <i data-lucide="{{ item.icon }}" class="inline-block mr-2 h-4 w-4"></i>
+            {% endif %}
+            {{ text }}
+        </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+</header>

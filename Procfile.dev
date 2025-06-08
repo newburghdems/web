@@ -1,0 +1,3 @@
+jekyll: bundle exec jekyll serve
+tailwind: npx @tailwindcss/cli -i _css/base.css -o assets/css/main.css --watch
+react: npm run watch:react

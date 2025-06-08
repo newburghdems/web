@@ -1,0 +1,51 @@
+{% assign candidates_to_display = site.data.candidates | limit: 6 %}
+
+<section id="candidate-spotlight" class="py-16 bg-light-gray">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-merriweather font-bold text-dem-blue-600 mb-3">{{ site.data.i18n[page.lang].home.candidate_spotlight.title }}</h2>
+            <p class="text-lg text-gray-600 font-inter">{{ site.data.i18n[page.lang].home.candidate_spotlight.subtitle }}</p>
+        </div>
+
+        {% if candidates_to_display and candidates_to_display.size > 0 %}
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+            {% for candidate in candidates_to_display %}
+            {% assign candidate_slug = candidate.name | slugify %}
+            <a href="{{ 'our-candidates/' | localize_url | relative_url }}#{{ candidate_slug }}" class="group block bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden border border-transparent hover:border-dem-blue-200">
+                <div class="flex items-center">
+                    {% comment %} Image container - fixed square size {% endcomment %}
+                    <div class="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32">
+                        {% if candidate.photo and candidate.photo != "" %}
+                        <img src="{{ candidate.photo | relative_url }}" alt="Photo of {{ candidate.name }}" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                        {% else %}
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <img src="https://placehold.co/128x128/E9F2FC/0C2F55?text={{candidate.name | slice: 0 | upcase }}" alt="Placeholder for {{ candidate.name }}" class="w-full h-full object-cover">
+                            {% comment %} Using a square placeholder and just the first initial {% endcomment %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="p-4 flex-grow">
+                        <h3 class="text-lg sm:text-xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300 mb-1">{{ candidate.name }}</h3>
+                        <p class="text-xs sm:text-sm font-inter text-oc-orange-dark font-medium">{{ candidate.position_running_for }}</p>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="{{ 'our-candidates/' | localize_url | relative_url }}" class="inline-flex items-center justify-center bg-dem-blue-500 hover:bg-dem-blue-600 text-white font-semibold py-3 px-6 rounded-md text-lg transition-colors duration-300 shadow hover:shadow-md group">
+                {{ site.data.i18n[page.lang].home.candidate_spotlight.view_all }}
+                <i data-lucide="arrow-right" class="ml-2 h-5 w-5 transform transition-transform duration-200 group-hover:translate-x-1"></i>
+            </a>
+        </div>
+
+        {% else %}
+        <div class="text-center py-10">
+            <i data-lucide="users" class="h-16 w-16 mx-auto mb-4 text-dem-blue-300"></i>
+            <p class="text-xl text-gray-500 font-inter">{{ site.data.i18n[page.lang].home.candidate_spotlight.no_candidates_title }}</p>
+            <p class="text-md text-gray-500 font-inter mt-2">{{ site.data.i18n[page.lang].home.candidate_spotlight.no_candidates_subtitle_1 }} <a href="{{ '/get-involved/' | relative_url }}" class="text-dem-blue-600 hover:text-dem-blue-800 font-medium underline">{{ site.data.i18n[page.lang].home.candidate_spotlight.no_candidates_subtitle_1 }}</a> {{ site.data.i18n[page.lang].home.candidate_spotlight.no_candidates_subtitle_3 }}</p>
+        </div>
+        {% endif %}
+    </div>
+</section>

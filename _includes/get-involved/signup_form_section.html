@@ -1,0 +1,41 @@
+<section class="py-12 md:py-16 bg-gray-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto bg-white p-6 sm:p-8 rounded-md shadow-xl">
+            <h2 class="font-merriweather text-2xl sm:text-3xl font-semibold text-dem-blue-500 mb-6 text-center">
+                {{ site.data.i18n[page.lang].get_involved.signup_form.title }}
+            </h2>
+            <p class="font-inter text-gray-600 text-center mb-6">
+                {{ site.data.i18n[page.lang].get_involved.signup_form.subtitle }}
+            </p>
+            <form action="YOUR_FORM_ACTION_URL" method="POST" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-5">
+                    <div>
+                        <label for="gi-first-name" class="block text-sm font-medium text-gray-700 mb-1">{{ site.data.i18n[page.lang].shared.first_name }}</label>
+                        <input type="text" name="first-name" id="gi-first-name" required class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-dem-blue-500 focus:border-dem-blue-500 transition-colors duration-200" placeholder="Jane">
+                    </div>
+                    <div>
+                        <label for="gi-last-name" class="block text-sm font-medium text-gray-700 mb-1">{{ site.data.i18n[page.lang].shared.last_name }}</label>
+                        <input type="text" name="last-name" id="gi-last-name" required class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-dem-blue-500 focus:border-dem-blue-500 transition-colors duration-200" placeholder="Doe">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="gi-email" class="block text-sm font-medium text-gray-700 mb-1">{{ site.data.i18n[page.lang].shared.email_address }}</label>
+                    <input type="email" name="email" id="gi-email" required class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-dem-blue-500 focus:border-dem-blue-500 transition-colors duration-200" placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label for="gi-interests" class="block text-sm font-medium text-gray-700 mb-1">{{ site.data.i18n[page.lang].get_involved.signup_form.help_method }}</label>
+                    <textarea name="interests" id="gi-interests" rows="3" class="w-full px-4 py-2.5 border border-gray-300 rounded-md focus:ring-2 focus:ring-dem-blue-500 focus:border-dem-blue-500 transition-colors duration-200" placeholder="{{ site.data.i18n[page.lang].get_involved.signup_form.help_method_placeholder }}"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" class="w-full bg-dem-blue-500 hover:bg-dem-blue-700 text-white font-semibold py-3 px-5 rounded-md text-center transition-colors duration-300 text-lg flex items-center justify-center space-x-2 mt-2">
+                        <i data-lucide="send" class="h-5 w-5"></i>
+                        <span>{{ site.data.i18n[page.lang].get_involved.signup_form.button }}</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

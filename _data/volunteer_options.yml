@@ -1,0 +1,42 @@
+- en:
+    title: Door-to-Door Canvassing
+    description: Connect directly with voters in our community, share information about Democratic candidates and values, and help us understand the issues that matter most to Newburgh residents.
+  es:
+    title: Visitas Puerta a Puerta
+    description: Conecta directamente con los votantes de nuestra comunidad, comparte información sobre los candidatos y valores demócratas, y ayúdanos a entender los problemas que más importan a los residentes de Newburgh.
+  icon: door-open
+- en:
+    title: Phone Banking
+    description: Reach out to voters from the comfort of your home or join us for group phone banking sessions. It's a great way to engage voters and encourage turnout.
+  es:
+    title: Llamadas Telefónicas (Phone Banking)
+    description: Contacta a los votantes desde la comodidad de tu hogar o únete a nosotros para sesiones grupales de llamadas telefónicas. Es una excelente manera de involucrar a los votantes y fomentar la participación.
+  icon: phone
+- en:
+    title: Event Support
+    description: Help us organize and run successful meetings, town halls, fundraisers, and community events. Roles can include setup, registration, greeting, and more.
+  es:
+    title: Apoyo en Eventos
+    description: Ayúdanos a organizar y llevar a cabo reuniones exitosas, ayuntamientos (asambleas públicas), eventos para recaudar fondos y eventos comunitarios. Las funciones pueden incluir montaje, registro, bienvenida y más.
+  icon: calendar-check
+- en:
+    title: Community Outreach
+    description: Represent the committee at local fairs, festivals, and public gatherings. Engage with the community and share information about our mission and activities.
+  es:
+    title: Alcance Comunitario
+    description: Representa al comité en ferias locales, festivales y reuniones públicas. Interactúa con la comunidad y comparte información sobre nuestra misión y actividades.
+  icon: megaphone
+- en:
+    title: Digital Support
+    description: Lend your skills to our online efforts. This could involve helping with social media content, website updates, graphic design, or data entry.
+  es:
+    title: Apoyo Digital
+    description: Aporta tus habilidades a nuestros esfuerzos en línea. Esto podría implicar ayudar con contenido para redes sociales, actualizaciones del sitio web, diseño gráfico o entrada de datos.
+  icon: laptop
+- en:
+    title: Write to Voters
+    description: Help us with postcard campaigns, writing letters to the editor, or drafting other communications to engage and inform voters.
+  es:
+    title: Escribir a los Votantes
+    description: Ayúdanos con campañas de postales, escribiendo cartas al editor o redactando otras comunicaciones para involucrar e informar a los votantes.
+  icon: edit-3

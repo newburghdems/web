@@ -1,0 +1,38 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
+    <meta name="description" content="Dedicated to engaging our community, supporting Democratic candidates, and championing Democratic values for a more inclusive and prosperous Town of Newburgh.">
+    <meta name="author" content="Town of Newburgh Democratic Committee">
+    <meta name="keywords" content="Town of Newburgh Democrats, Newburgh NY politics, Democratic Party Newburgh NY, elect Democrats, local elections Newburgh NY">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.newburghdemocrats.org/">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta property="og:description" content="Dedicated to engaging our community, supporting Democratic candidates, and championing Democratic values for a more inclusive and prosperous Town of Newburgh.">
+    <meta property="og:image" content="/assets/img/tndc-og.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "react": "https://esm.sh/react@18.2.0",
+            "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+            "react-dom": "https://esm.sh/react-dom@18.2.0",
+            "lucide-react": "https://esm.sh/lucide-react@0.263.1",
+            "@atproto/api": "https://esm.sh/@atproto/api@0.14.4",
+            "ical": "https://esm.sh/ical"
+          }
+        }
+    </script>
+    <script type="module" src="{{ '/assets/js/dist/main.js' | relative_url }}"></script>
+    <script>
+      window.site_translations = {
+        'en': {{ site.data.i18n.en | jsonify }},
+        'es': {{ site.data.i18n.es | jsonify }}
+      }
+    </script>
+</head>
