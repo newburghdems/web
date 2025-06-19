@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import {Loader2} from 'lucide-react';
-import {BskyAgent, RichText, AtUri} from '@atproto/api';
+import React, { useState, useEffect } from 'react';
+import { Loader2 } from 'lucide-react';
+import { BskyAgent, RichText, AtUri } from '@atproto/api';
 
 const formatTimeAgo = (date) => {
   const seconds = Math.floor((new Date() - new Date(date)) / 1000);
@@ -60,7 +60,7 @@ const BlueskyUpdates = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const agent = new BskyAgent({service: 'https://public.api.bsky.app'});
+        const agent = new BskyAgent({ service: 'https://public.api.bsky.app' });
 
         const response = await agent.api.app.bsky.feed.getAuthorFeed({
           actor: 'newburghdems.org',
@@ -147,22 +147,24 @@ const BlueskyUpdates = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {posts.map((post, index) => (
             <a
-              key={index} // [cite: 313]
+              key={index}
               href={post.uri}
               target="_blank"
               rel="noopener noreferrer"
               className="block group"
             >
-              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 h-full">
-                {post.imageUrl && (
-                  <img
-                    src={post.imageUrl}
-                    alt={post.altText}
-                    className="w-full object-cover group-hover:opacity-90 transition-opacity"
-                  />
-                )}
-                <div className="p-3">
-                  <p className="text-xs text-gray-500">
+              <div className="bg-light-gray rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 h-full flex flex-col overflow-hidden">
+                <div className="flex-grow flex items-center justify-center">
+                  {post.imageUrl && (
+                    <img
+                      src={post.imageUrl}
+                      alt={post.altText}
+                      className="w-full h-auto max-h-full object-contain group-hover:opacity-90 transition-opacity"
+                    />
+                  )}
+                </div>
+                <div className="p-3 mt-auto">
+                  <p className="text-xs text-gray-500 font-semibold">
                     {new Date(post.createdAt).toLocaleDateString('en-US', {
                       month: 'short',
                       day: 'numeric',

@@ -139,22 +139,23 @@ const BlueskyUpdates = () => {
   }, /*#__PURE__*/React.createElement("div", {
     className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
   }, posts.map((post, index) => /*#__PURE__*/React.createElement("a", {
-    key: index // [cite: 313]
-    ,
+    key: index,
     href: post.uri,
     target: "_blank",
     rel: "noopener noreferrer",
     className: "block group"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 h-full"
+    className: "bg-light-gray rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 h-full flex flex-col overflow-hidden"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex-grow flex items-center justify-center"
   }, post.imageUrl && /*#__PURE__*/React.createElement("img", {
     src: post.imageUrl,
     alt: post.altText,
-    className: "w-full object-cover group-hover:opacity-90 transition-opacity"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "p-3"
+    className: "w-full h-auto max-h-full object-contain group-hover:opacity-90 transition-opacity"
+  })), /*#__PURE__*/React.createElement("div", {
+    className: "p-3 mt-auto"
   }, /*#__PURE__*/React.createElement("p", {
-    className: "text-xs text-gray-500"
+    className: "text-xs text-gray-500 font-semibold"
   }, new Date(post.createdAt).toLocaleDateString('en-US', {
     month: 'short',
     day: 'numeric',
