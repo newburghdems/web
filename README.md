@@ -21,10 +21,10 @@ The repository is a standard Jekyll project with some additions for the React co
 * \_layouts/: Defines the main HTML structure for different types of pages (e.g., default.html, page.html).
 * \_posts/: Blog posts.
 * assets/: Contains all static assets.
-    * css/: Compiled CSS.
-    * js/dist/: Compiled React JavaScript bundles.
-    * js/src/: React source code (JSX).
-    * img/: Site images and logos.
+  * css/: Compiled CSS.
+  * js/dist/: Compiled React JavaScript bundles.
+  * js/src/: React source code (JSX).
+  * img/: Site images and logos.
 * es/: Contains all the Spanish-language versions of the site's pages.
 * \_config.yml: The main Jekyll configuration file.
 * Gemfile: Manages Ruby dependencies (gems).
@@ -43,19 +43,31 @@ To get the project running on your local machine, you'll need to have Ruby, Bund
 ### **Installation**
 
 1. **Clone the repository:**  
-   git clone \[https://github.com/newburghdems/web.git\](https://github.com/newburghdems/web.git)  
-   cd newburgh-dems-website
+
+    ```bash
+    git clone \[<https://github.com/newburghdems/web.git\>](<https://github.com/newburghdems/web.git>)
+    cd newburgh-dems-website
+    ```
 
 2. **Install Ruby dependencies:**  
+
+   ```bash
    bundle install
+    ```
 
 3. **Install Node.js dependencies:**  
+
+   ```bash
    npm install
+    ```
 
 ## **Development**
 
 To run the website locally for development, a foreman script is provided to start all necessary processes concurrently.  
+
+```bash
 ./bin/dev
+```
 
 This command will:
 
@@ -63,7 +75,7 @@ This command will:
 2. Start the Tailwind CSS watcher to recompile CSS on changes.
 3. Start the Babel watcher to recompile React JSX files on changes.
 
-The site will be available at http://localhost:4000.
+The site will be available at <http://localhost:4000>.
 
 ## **Content Management**
 
@@ -102,9 +114,9 @@ Interactive parts of the site are built with React.
 * **Source Code:** The React components (in JSX) are located in assets/js/src/.
 * **Build Process:** The build:react script in package.json uses Babel to transpile the JSX files into standard JavaScript, which is then saved in assets/js/dist/.
 * **Key Components:**
-    * NextCommitteeMeeting.jsx: Fetches and displays the next committee meeting from the public Google Calendar.
-    * UpcomingEvents.jsx: Fetches and displays other upcoming events.
-    * BlueskyUpdates.jsx: Fetches and displays recent posts from the committee's Bluesky account.
+  * NextCommitteeMeeting.jsx: Fetches and displays the next committee meeting from the public Google Calendar.
+  * UpcomingEvents.jsx: Fetches and displays other upcoming events.
+  * BlueskyUpdates.jsx: Fetches and displays recent posts from the committee's Bluesky account.
 
 ## **Deployment**
 
@@ -118,8 +130,6 @@ Deployment is automated using **GitHub Actions**.
     4. Securely deploys the contents of the generated \_site directory to the server using rsync over SSH.
 * **Security:** All sensitive credentials (SSH key, host, user, port) are stored as encrypted **secrets** in the GitHub repository settings and are not exposed in the codebase.
 * **Monitoring:** You can view the status and logs of deployments under the "Actions" tab of the GitHub repository.
-
-This automated process replaces the old bin/deploy script, which should be removed from the project.
 
 ## **Contributing**
 
