@@ -44,8 +44,8 @@ if (empty($first_name) || empty($last_name) || !filter_var($email, FILTER_VALIDA
 // -----------------------------------------------------------------------------
 
 // --- Configuration ---
-$recipient_email = "townofnewburghdems@gmail.com";
-$email_from      = "no-reply@newburghdems.org";
+$recipient_email = "mail@newburghdems.org";
+$email_from      = "Newburgh Dems Website <no-reply@newburghdems.org>";
 $subject         = "";
 $message_body    = "";
 $redirect_path   = "/";
@@ -92,7 +92,7 @@ try {
     $spreadsheetId = '1MJBpzB93WaOEcNpr3nW629ElKq4ptACR7qBgD_8Qb94';
     $range = 'Submissions';
 
-    $googleAccountKeyFilePath = __DIR__ . '../../etc/newburghdems.org/google-api-credentials.json';
+    $googleAccountKeyFilePath = __DIR__ . '/../../etc/newburghdems.org/google-api-credentials.json';
     putenv('GOOGLE_APPLICATION_CREDENTIALS=' . $googleAccountKeyFilePath);
 
     $client = new Google_Client();
