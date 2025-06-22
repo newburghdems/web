@@ -186,3 +186,17 @@ thank_you:
   dont_forget: Don't forget to follow us on social media for the latest updates
   final_thank_you: Thank you for being a part of our Democratic community in Newburgh!
 
+volunteer_thank_you:
+  header: "Thank you for stepping up to volunteer! A member of our committee will be in touch with you shortly to discuss how you can best contribute. Your energy and support are invaluable to our success."
+  whats_next: "What's Next?"
+  while_you_wait: "While you wait for us to contact you, here are a few ways to stay engaged"
+  get_involved: "Explore Volunteer Roles"
+  discover: "Review the different ways you can contribute."
+  upcoming_events: "View Upcoming Events"
+  upcoming_events_cta: "Join us at a meeting or community gathering."
+  our_candidates: "Meet Our Candidates"
+  our_candidates_cta: "Learn about the people you'll be supporting."
+  donate: "Make a Donation"
+  donate_cta: "Your financial support helps us fund our activities."
+  dont_forget: "And don't forget to follow us on social media to stay up-to-date"
+  final_thank_you: "Together, we will make a difference in Newburgh. Thank you again!"

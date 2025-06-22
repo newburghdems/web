@@ -3,7 +3,6 @@
 
 // --- Configuration ---
 $recipient_email = "mail@newburghdems.org";
-$email_subject = "New Volunteer Signup";
 
 // --- Form Processing ---
 
@@ -28,6 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // --- Email Composition ---
+    // Email subject
+    $email_subject = "New Volunteer Signup from $first_name $last_name";
 
     // Construct the email body.
     $email_body = "A new volunteer has signed up through the website.\n\n";
@@ -42,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "You can reply directly to this email to contact them.";
 
     // Construct email headers.
-    $headers = "From: TNDems Website <noreply@newburghdems.org>\r\n";
+    $headers = "From: Newburgh Dems Website <noreply@newburghdems.org>\r\n";
     $headers .= "Reply-To: " . $first_name . " " . $last_name . " <" . $email . ">\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
@@ -53,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($recipient_email, $email_subject, $email_body, $headers)) {
         // --- Redirect to Thank You Page ---
         // Determine the correct thank you page based on the language.
-        $thank_you_path = ($lang === 'es') ? '/es/thank-you/' : '/thank-you/';
+        $thank_you_path = ($lang === 'es') ? '/es/volunteer-thank-you/' : '/volunteer-thank-you/';
 
         // Get the server protocol and host to build an absolute URL.
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";

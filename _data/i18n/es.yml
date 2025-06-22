@@ -198,3 +198,18 @@ thank_you:
   donate_cta: Ayuda a impulsar nuestros esfuerzos con una contribución.
   dont_forget: No olvides seguirnos en las redes sociales para las últimas actualizaciones
   final_thank_you: ¡Gracias por ser parte de nuestra comunidad demócrata en Newburgh!
+
+volunteer_thank_you:
+  header: "¡Gracias por dar un paso al frente para ser voluntario/a! Un miembro de nuestro comité se pondrá en contacto contigo en breve para hablar sobre cómo puedes contribuir mejor. Tu energía y apoyo son invaluables para nuestro éxito."
+  whats_next: "¿Qué Sigue?"
+  while_you_wait: "Mientras esperas que te contactemos, aquí tienes algunas formas de mantenerte involucrado/a"
+  get_involved: "Explora Roles de Voluntariado"
+  discover: "Revisa las diferentes maneras en que puedes contribuir."
+  upcoming_events: "Ver Próximos Eventos"
+  upcoming_events_cta: "Únete a nosotros en una reunión o encuentro comunitario."
+  our_candidates: "Conoce a Nuestros Candidatos/as"
+  our_candidates_cta: "Aprende sobre las personas a las que estarás apoyando."
+  donate: "Haz una Donación"
+  donate_cta: "Tu apoyo financiero nos ayuda a financiar nuestras actividades."
+  dont_forget: "Y no olvides seguirnos en las redes sociales para mantenerte al día"
+  final_thank_you: "Juntos/as, haremos una diferencia en Newburgh. ¡Gracias de nuevo!"
