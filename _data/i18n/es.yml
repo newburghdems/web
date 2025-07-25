@@ -3,6 +3,7 @@ shared:
   mission: "Dedicados a involucrar a nuestra comunidad, apoyar a los candidatos demócratas y defender los valores demócratas para un Pueblo de Newburgh más inclusivo y próspero."
   first_name: "Nombre"
   last_name: "Apellido"
+  phone_number: "Número de teléfono"
   email_address: "Correo Electrónico"
   follow_us_on: "Síguenos en"
 
@@ -213,3 +214,23 @@ volunteer_thank_you:
   donate_cta: "Tu apoyo financiero nos ayuda a financiar nuestras actividades."
   dont_forget: "Y no olvides seguirnos en las redes sociales para mantenerte al día"
   final_thank_you: "Juntos/as, haremos una diferencia en Newburgh. ¡Gracias de nuevo!"
+
+need_a_ride:
+  full_pickup_address: "Dirección Completa de Recogida"
+  special_instructions: "Instrucciones Especiales (Opcional)"
+  special_instructions_placeholder: "ej., mejor hora para llamar, necesidades de accesibilidad"
+  request_my_ride: "Solicitar Mi Transporte"
+
+need_a_ride_thank_you:
+  header: "¡Gracias por contactarnos! Tu solicitud de transporte para ir a votar ha sido enviada con éxito."
+  whats_next: "¿Qué Sigue?"
+  while_you_wait: "Mientras esperas nuestra llamada, aquí tienes otras formas de prepararte para el día de las elecciones:"
+  check_registration: "Verifica tu Registro"
+  check_registration_cta: "Asegúrate de que estás registrado para votar en tu dirección actual."
+  find_polling_place: "Encuentra tu Lugar de Votación"
+  find_polling_place_cta: "Confirma a dónde debes ir para emitir tu voto."
+  view_candidates: "Conoce a Nuestros Candidatos"
+  view_candidates_cta: "Infórmate sobre los demócratas que se postulan para representarte."
+  donate: "Donar"
+  donate_cta: "Ayúdanos a financiar nuestros esfuerzos para movilizar el voto."
+  final_thank_you: "Gracias de nuevo por tu compromiso cívico. ¡Esperamos poder ayudarte a llegar a las urnas!"

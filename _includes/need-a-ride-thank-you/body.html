@@ -1,0 +1,75 @@
+<section class="py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+
+            <p class="text-xl font-inter text-gray-700 leading-relaxed mb-8">
+                {{ site.data.i18n[page.lang].need_a_ride_thank_you.header }}
+            </p>
+
+            <div class="border-t border-dem-blue-200 pt-8">
+                <h3 class="text-2xl font-merriweather font-semibold text-dem-blue-500 mb-5">
+                    {{ site.data.i18n[page.lang].need_a_ride_thank_you.whats_next }}
+                </h3>
+                <div class="space-y-6 text-lg font-inter text-gray-600 leading-relaxed">
+                    <p>
+                        {{ site.data.i18n[page.lang].need_a_ride_thank_you.while_you_wait }}
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        <a href="{{ 'voter-resources/' | localize_url | relative_url }}"
+                           class="group block bg-dem-blue-50 hover:bg-dem-blue-100 text-dem-blue-700 rounded-lg shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="user-check" class="h-10 w-10 mb-3 text-dem-blue-500"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].need_a_ride_thank_you.check_registration }}</span>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    {{ site.data.i18n[page.lang].need_a_ride_thank_you.check_registration_cta }}
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="{{ 'voter-resources/' | localize_url | relative_url }}"
+                           class="group block bg-dem-blue-50 hover:bg-dem-blue-100 text-dem-blue-700 rounded-lg shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="map-pin" class="h-10 w-10 mb-3 text-dem-blue-500"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].need_a_ride_thank_you.find_polling_place }}</span>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    {{ site.data.i18n[page.lang].need_a_ride_thank_you.find_polling_place_cta }}
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="{{ 'our-candidates/' | localize_url | relative_url }}"
+                           class="group block bg-dem-blue-50 hover:bg-dem-blue-100 text-dem-blue-700 rounded-lg shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="users" class="h-10 w-10 mb-3 text-dem-blue-500"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].need_a_ride_thank_you.view_candidates }}</span>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    {{ site.data.i18n[page.lang].need_a_ride_thank_you.view_candidates_cta }}
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://secure.actblue.com/donate/town-of-newburgh-democratic-committee-1"
+                           target="_blank" rel="noopener noreferrer"
+                           class="group block bg-oc-orange-light hover:bg-orange-100 text-oc-orange-dark rounded-lg shadow-md hover:shadow-lg p-6 transition-all duration-300 ease-in-out">
+                            <div class="flex flex-col items-center text-center">
+                                <i data-lucide="heart" class="h-10 w-10 mb-3 text-oc-orange-dark"></i>
+                                <span class="font-semibold">{{ site.data.i18n[page.lang].need_a_ride_thank_you.donate }}</span>
+                                <p class="text-sm text-gray-600 mt-1">{{ site.data.i18n[page.lang].need_a_ride_thank_you.donate_cta }}</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg font-inter text-gray-700 leading-relaxed mt-12">
+                {{ site.data.i18n[page.lang].need_a_ride_thank_you.final_thank_you }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+</script>

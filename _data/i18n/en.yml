@@ -12,6 +12,7 @@ shared:
   mission: The Town of Newburgh Democratic Committee is dedicated to building Democratic power through strong voter engagement and support for our local candidates.
   first_name: First Name
   last_name: Last Name
+  phone_number: Phone Number
   email_address: Email Address
   follow_us_on: Follow Us on
 
@@ -200,3 +201,23 @@ volunteer_thank_you:
   donate_cta: "Your financial support helps us fund our activities."
   dont_forget: "And don't forget to follow us on social media to stay up-to-date"
   final_thank_you: "Together, we will make a difference in Newburgh. Thank you again!"
+
+need_a_ride:
+  full_pickup_address: Full Pickup Address
+  special_instructions: Special Instructions (Optional)
+  special_instructions_placeholder: e.g., best time to call, accessibility needs
+  request_my_ride: Request My Ride
+
+need_a_ride_thank_you:
+  header: "Thank you for reaching out! Your request for a ride to the polls has been successfully submitted."
+  whats_next: "What's Next?"
+  while_you_wait: "While you wait for our call, here are a few other ways you can prepare for Election Day:"
+  check_registration: "Check Your Registration"
+  check_registration_cta: "Make sure you're registered to vote at your current address."
+  find_polling_place: "Find Your Polling Place"
+  find_polling_place_cta: "Confirm where you need to go to cast your ballot."
+  view_candidates: "View Our Candidates"
+  view_candidates_cta: "Learn about the Democrats running to represent you."
+  donate: "Donate"
+  donate_cta: "Help us fund our efforts to get out the vote."
+  final_thank_you: "Thank you again for your civic engagement. We look forward to helping you get to the polls!"
