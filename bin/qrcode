@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+# Make sure you have these gems installed:
+# gem install rqrcode
+# gem install chunky_png
+
+require 'rqrcode'
+
+qr_codes = {
+  'need-a-ride' => 'https://newburghdems.org/need-a-ride',
+  'early-ballot-application' => 'https://newburghdems.org/early-ballot-application',
+  'register-to-vote' => 'https://newburghdems.org/register-to-vote',
+  'polling-place-locator' => 'https://newburghdems.org/polling-place-locator',
+}
+
+qr_codes.each do |key, url|
+  # Create the QR code with better error correction
+  qrcode = RQRCode::QRCode.new(url, size: 5, level: :q)
+
+  png = qrcode.as_png(
+    size: 600,                # Overall image size in pixels
+    border_modules: 1,        # Quiet zone around the QR code (required for proper scanning)
+    color_mode: ChunkyPNG::COLOR_GRAYSCALE,
+    color: 'black',           # QR code color
+    fill: 'white',            # Background color
+    file: nil                 # We'll save the file manually
+  )
+
+  # Save the SVG file
+  File.write("qr/#{key}-qr-code.png", png)
+end
