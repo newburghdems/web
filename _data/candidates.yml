@@ -22,7 +22,7 @@
 - name: "Mary McLymore"
   position_running_for: "Town Council"
   bio: "Bio to come"
-  photo: "https://eu.ui-avatars.com/api/?name=Mary+McLymore&size=400&background=124882&color=fff"
+  photo: "/assets/img/candidates/mary-mclymore.jpg"
   links:
     - text: "Campaign Website"
       url: "https://candidatewebsite.com"
