@@ -39,15 +39,9 @@
     One of her favorite books in the bible that has ministered to her life as chapters are being written is Psalms 27 in its entirety.
   photo: "/assets/img/candidates/mary-mclymore.jpg"
   links:
-    - text: "Campaign Website"
-      url: "https://candidatewebsite.com"
-      icon: "external-link"
-    - text: "Follow on Facebook"
-      url: "https://facebook.com/candidate"
-      icon: "facebook"
-    - text: "Donate Here"
-      url: "https://secure.actblue.com/donate/candidate"
-      icon: "heart"
+    - text: "Email"
+      url: "mailto:FriendsofMaryMclymore@gmail.com"
+      icon: "mail"
 
 - name: "Genesis Ramos"
   position_running_for: "County Legislator, District 4"
