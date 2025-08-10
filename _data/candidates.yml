@@ -109,8 +109,15 @@
 
 - name: "Gabrielle Hill"
   position_running_for: "County Legislator, District 6"
-  bio: "Bio to come."
-  photo: "https://eu.ui-avatars.com/api/?name=Gabrielle+Hill&size=400&background=124882&color=fff"
+  bio: |
+    Gabrielle Hill is a dedicated advocate for the Newburgh community, now running for the Orange County Legislature in District 6. Her campaign platform is built on addressing the critical needs of the community, focusing on key areas to improve the quality of life for all residents.
+
+    A central plank of her platform is ensuring access to clean water. Ms. Hill is committed to eliminating the lead lines in Newburgh's water system that pose a significant health risk to children and families. She also plans to mobilize resources to clean up the "forever chemicals" that have contaminated Lake Washington. Recognizing the importance of accessible transportation, she is advocating for direct bus service from Newburgh to Goshen, making county services more readily available to those who do not drive. Her transportation plan also includes the addition of more bus stations and improved signage for bus routes.
+
+    With a deep understanding of the housing challenges faced by many in the community, Gabrielle Hill intends to actively engage with the County Legislature's new Housing Taskforce. Her goal is to protect working-class residents from displacement and to increase the availability of affordable housing. She is also committed to fostering better relationships between the community and local government, ensuring that the concerns of Newburgh residents are heard in Goshen. She pledges to work collaboratively with her Democratic colleagues to find effective solutions to local problems and to combat corruption in county government.
+
+    Gabrielle Hill's candidacy is rooted in a long history of community service and advocacy. She has been an active participant in numerous local organizations, including the City of Newburgh Transportation Advisory Committee, the City of Newburgh Human Rights Commission, and the Colored Burial Ground Committee. She has also been involved with the Annual Frederick Douglass Day Commemorations, the Newburgh Clean Water Project, and Citizen Action of the Hudson Valley, demonstrating a consistent commitment to social, economic, and racial justice.
+  photo: "/assets/img/candidates/gabrielle-hill.jpg"
   links:
     - text: "Website"
       url: "https://gabrielleforlegislature.com/"
