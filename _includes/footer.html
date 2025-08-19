@@ -3,6 +3,9 @@
         <div class="mb-4">
             <a href="/" class="text-xl font-semibold hover:text-white">Town of Newburgh Democratic Committee</a>
         </div>
+
+        <hr class="w-sm mx-auto my-6 border-gray-600">
+
         <div class="space-x-4 mb-4">
             {%- for item in site.data.navigation.items -%}
             {%- assign item_text = site.data.i18n[page.lang].nav[item.i18n_key] | default: item.i18n_key -%}
@@ -22,7 +25,14 @@
             <a href="{{ item_url }}" class="hover:text-white" {%- if item.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item_text }}</a>
             {%- endif -%}
             {%- endfor -%}
-            </div>
+        </div>
+
+        <div class="flex items-center justify-center space-x-4 mb-4">
+            <a href="/canvas" class="hover:text-white">Canvassing Resources</a>
+            <a href="/qr" class="hover:text-white">QR Quick Links</a>
+        </div>
+
+        <hr class="w-sm mx-auto my-6 border-gray-600">
 
         <div class="flex items-center justify-center space-x-4 mb-4">
             <a href="https://www.instagram.com/newburghtowndems" target="_blank" rel="noopener noreferrer" class="hover:text-white" title="{{ site.data.i18n[page.lang].shared.follow_us_on }} Instagram">

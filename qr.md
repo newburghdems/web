@@ -6,6 +6,7 @@ permalink: /qr/
 header_title: "Voter Quick Links"
 header_description: "Share these QR codes to provide quick access to important voter resources."
 header_text_align: "text-center"
+hide_language_selector: true
 ---
 
 {% include page_header.html %}

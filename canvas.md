@@ -6,6 +6,7 @@ permalink: /canvas/
 header_title: "Canvassing Resources"
 header_description: "Canvassing is a vital part of our outreach. Here you'll find resources to help you connect with voters effectively and represent our Democratic candidates."
 header_text_align: "text-center"
+hide_language_selector: true
 ---
 
 {% include page_header.html %}

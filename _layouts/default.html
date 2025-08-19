@@ -4,7 +4,9 @@
 <body class="bg-white text-gray-800 font-sans pt-20">
 
 {% include main_nav.html %}
+{% unless page.hide_language_selector %}
 {% include language_selector.html %}
+{% endunless %}
 
 {{ content }}
 
