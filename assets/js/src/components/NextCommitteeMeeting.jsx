@@ -200,7 +200,7 @@ const NextCommitteeMeeting = ({ calendarUrl }) => {
           {/* Skeleton for Details (Date, Time, Location) */}
           <div className="space-y-4"> {/* [cite: 496] */}
             <div className="flex items-start space-x-3"> {/* Increased spacing */}
-              <Calendar className="h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1" /> {/* Adjusted icon alignment */}
+              <Calendar className="h-5 w-5 text-dem-blue-500 flex-shrink-0" /> {/* Adjusted icon alignment */}
               <div>
                 <p className="text-sm text-gray-700">
                   <strong className="font-semibold text-gray-800">{translations.date}:</strong>
@@ -209,7 +209,7 @@ const NextCommitteeMeeting = ({ calendarUrl }) => {
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <Clock className="h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1" />
+              <Clock className="h-5 w-5 text-dem-blue-500 flex-shrink-0" />
               <div>
                 <p className="text-sm text-gray-700">
                   <strong className="font-semibold text-gray-800">{translations.time}:</strong>
@@ -219,7 +219,7 @@ const NextCommitteeMeeting = ({ calendarUrl }) => {
             </div>
             {/* Location Skeleton */}
             <div className="flex items-start space-x-3">
-              <MapPin className="h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1" />
+              <MapPin className="h-5 w-5 text-dem-blue-500 flex-shrink-0" />
               <div class="flex-grow">
                 <p className="w-full text-sm text-gray-700">
                   <div className="font-semibold text-gray-800">{translations.location}:</div>
@@ -277,7 +277,7 @@ const NextCommitteeMeeting = ({ calendarUrl }) => {
         </p>
         <div className="space-y-4"> {/* Increased spacing */}
           <div className="flex items-start space-x-3"> {/* Increased spacing */}
-            <Calendar className="h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1" /> {/* Adjusted icon alignment */}
+            <Calendar className="h-5 w-5 text-dem-blue-500 flex-shrink-0" /> {/* Adjusted icon alignment */}
             <div>
               <p className="text-sm text-gray-700">
                 <strong className="font-semibold text-gray-800">{translations.date}:</strong> {formatDate(committeeMeeting.start, committeeMeeting.end)}
@@ -285,7 +285,7 @@ const NextCommitteeMeeting = ({ calendarUrl }) => {
             </div>
           </div>
           <div className="flex items-start space-x-3">
-            <Clock className="h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1" />
+            <Clock className="h-5 w-5 text-dem-blue-500 flex-shrink-0" />
             <div>
               <p className="text-sm text-gray-700">
                 <strong className="font-semibold text-gray-800">{translations.time}:</strong> {formatTime(committeeMeeting.start, committeeMeeting.end, committeeMeeting.isAllDay)}
@@ -294,7 +294,7 @@ const NextCommitteeMeeting = ({ calendarUrl }) => {
           </div>
           {committeeMeeting.location && (
             <div className="flex items-start space-x-3">
-              <MapPin className="h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1" />
+              <MapPin className="h-5 w-5 text-dem-blue-500 flex-shrink-0" />
               <div>
                 <p className="text-sm text-gray-700">
                   <strong className="font-semibold text-gray-800">{translations.location}:</strong><br />

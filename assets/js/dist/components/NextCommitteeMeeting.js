@@ -210,7 +210,7 @@ const NextCommitteeMeeting = ({
     }, " ", /*#__PURE__*/React.createElement("div", {
       className: "flex items-start space-x-3"
     }, " ", /*#__PURE__*/React.createElement(Calendar, {
-      className: "h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1"
+      className: "h-5 w-5 text-dem-blue-500 flex-shrink-0"
     }), " ", /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
       className: "text-sm text-gray-700"
     }, /*#__PURE__*/React.createElement("strong", {
@@ -220,7 +220,7 @@ const NextCommitteeMeeting = ({
     }, "\xA0"), " "))), /*#__PURE__*/React.createElement("div", {
       className: "flex items-start space-x-3"
     }, /*#__PURE__*/React.createElement(Clock, {
-      className: "h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1"
+      className: "h-5 w-5 text-dem-blue-500 flex-shrink-0"
     }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
       className: "text-sm text-gray-700"
     }, /*#__PURE__*/React.createElement("strong", {
@@ -230,7 +230,7 @@ const NextCommitteeMeeting = ({
     }, "\xA0"), " "))), /*#__PURE__*/React.createElement("div", {
       className: "flex items-start space-x-3"
     }, /*#__PURE__*/React.createElement(MapPin, {
-      className: "h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1"
+      className: "h-5 w-5 text-dem-blue-500 flex-shrink-0"
     }), /*#__PURE__*/React.createElement("div", {
       class: "flex-grow"
     }, /*#__PURE__*/React.createElement("p", {
@@ -290,7 +290,7 @@ const NextCommitteeMeeting = ({
   }, " ", /*#__PURE__*/React.createElement("div", {
     className: "flex items-start space-x-3"
   }, " ", /*#__PURE__*/React.createElement(Calendar, {
-    className: "h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1"
+    className: "h-5 w-5 text-dem-blue-500 flex-shrink-0"
   }), " ", /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
     className: "text-sm text-gray-700"
   }, /*#__PURE__*/React.createElement("strong", {
@@ -298,7 +298,7 @@ const NextCommitteeMeeting = ({
   }, translations.date, ":"), " ", formatDate(committeeMeeting.start, committeeMeeting.end)))), /*#__PURE__*/React.createElement("div", {
     className: "flex items-start space-x-3"
   }, /*#__PURE__*/React.createElement(Clock, {
-    className: "h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1"
+    className: "h-5 w-5 text-dem-blue-500 flex-shrink-0"
   }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
     className: "text-sm text-gray-700"
   }, /*#__PURE__*/React.createElement("strong", {
@@ -306,7 +306,7 @@ const NextCommitteeMeeting = ({
   }, translations.time, ":"), " ", formatTime(committeeMeeting.start, committeeMeeting.end, committeeMeeting.isAllDay)))), committeeMeeting.location && /*#__PURE__*/React.createElement("div", {
     className: "flex items-start space-x-3"
   }, /*#__PURE__*/React.createElement(MapPin, {
-    className: "h-5 w-5 text-dem-blue-500 flex-shrink-0 mt-1"
+    className: "h-5 w-5 text-dem-blue-500 flex-shrink-0"
   }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
     className: "text-sm text-gray-700"
   }, /*#__PURE__*/React.createElement("strong", {
