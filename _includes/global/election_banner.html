@@ -1,0 +1,37 @@
+<div id="election-banner" class="absolute top-20 md:top-20 left-0 right-0 z-50 bg-dem-blue-700 text-white p-3 shadow-lg bg-gradient-to-br from-dem-blue-600 via-dem-blue-500 to-dem-blue-700" style="display: none;">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="vote" class="h-6 w-6 mr-3 flex-shrink-0 text-dem-blue-200"></i>
+                <p class="hidden lg:block font-inter font-bold text-sm md:text-base">Upcoming General Election:</p>
+                <p class="font-inter text-sm md:text-base">
+                    <a href="/voter-resources">
+                    {{ site.data.i18n[page.lang].election_banner.line_1 | default: "Early voting begins" }} <strong class="font-bold text-dem-blue-100">{{ site.data.i18n[page.lang].election_banner.early_voting_date | default: "October 25" }}</strong>.
+                    {{ site.data.i18n[page.lang].election_banner.line_2 | default: "Election day is" }} <strong class="font-bold text-dem-blue-100">{{ site.data.i18n[page.lang].election_banner.election_day | default: "November 4" }}</strong>.
+                    </a>
+                </p>
+            </div>
+            <button id="close-election-banner" title="Dismiss" class="ml-4 p-1 rounded-full hover:bg-dem-blue-600 focus:outline-none focus:ring-2 focus:ring-white">
+                <i data-lucide="x" class="h-5 w-5"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.getElementById('election-banner');
+    const closeButton = document.getElementById('close-election-banner');
+
+    // Check if the banner has been dismissed during this session
+    if (sessionStorage.getItem('electionBannerDismissed') !== 'true') {
+      banner.style.display = 'block';
+    }
+
+    closeButton.addEventListener('click', () => {
+      banner.style.display = 'none';
+      // Remember that the user has closed the banner for this session
+      sessionStorage.setItem('electionBannerDismissed', 'true');
+    });
+  });
+</script>

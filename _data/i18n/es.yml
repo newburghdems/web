@@ -238,3 +238,9 @@ need_a_ride_thank_you:
   donate: "Donar"
   donate_cta: "Ayúdanos a financiar nuestros esfuerzos para movilizar el voto."
   final_thank_you: "Gracias de nuevo por tu compromiso cívico. ¡Esperamos poder ayudarte a llegar a las urnas!"
+
+election_banner:
+  line_1: "La votación anticipada comienza el"
+  early_voting_date: "25 de octubre"
+  line_2: "El día de las elecciones es el"
+  election_day: "4 de noviembre"

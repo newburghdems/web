@@ -224,3 +224,9 @@ need_a_ride_thank_you:
   donate: "Donate"
   donate_cta: "Help us fund our efforts to get out the vote."
   final_thank_you: "Thank you again for your civic engagement. We look forward to helping you get to the polls!"
+
+election_banner:
+  line_1: "Early voting begins"
+  early_voting_date: "October 25"
+  line_2: "Election day is"
+  election_day: "November 4"

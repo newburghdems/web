@@ -147,10 +147,10 @@ const UpcomingEvents = ({
         events.sort((a, b) => a.start - b.start);
         const upcomingOtherEvents = [];
         for (const event of events) {
-          if (upcomingOtherEvents.length < 6) {
+          if (upcomingOtherEvents.length < 5) {
             upcomingOtherEvents.push(event);
           }
-          if (upcomingOtherEvents.length >= 6) break;
+          if (upcomingOtherEvents.length >= 5) break;
         }
         setOtherEvents(upcomingOtherEvents);
       } catch (err) {
