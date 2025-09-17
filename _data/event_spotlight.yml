@@ -1,0 +1,21 @@
+# Controls whether the event spotlight is displayed on the homepage.
+# Set to false or remove the file to hide it.
+enabled: true
+
+# The main title for the event spotlight section.
+title: "Knock on Doors for Democrats - Town of Newburgh"
+
+# Event details
+date: "Saturday, September 20"
+time: "10:30am – 1pm EDT"
+location_name: "The Shake and Grind Cafe Parking Lot"
+location_address: "190 S Plank Rd, Newburgh, NY 12550"
+
+# --- Call to Action ---
+# IMPORTANT: Replace this placeholder with your actual Mobilize.us event URL.
+mobilize_url: "https://www.mobilize.us/orangecountydemocrats/event/845929/?referring_vol=6921289&rname=Jennifer&timeslot=5528283&referring_participation=44021954&referring_data_signature=v1-404f51e2e57327b1&share_medium=copy_link&share_context=signup-form-modal"
+
+# --- Image Details ---
+# Assumes you will save the event graphic at this path.
+image_path: "/assets/img/events/canvassing-day-ld16.png"
+image_alt: "Canvassing Day event for Mary Lou Carolan, Stephen Hunter, and Mary McLymore"

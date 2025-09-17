@@ -61,6 +61,10 @@ home:
     no_title: "Evento sin título"
     next_committee_meeting_not_found: "La próxima reunión del comité se anunciará pronto. ¡Consulta nuestro calendario completo para otros eventos!"
 
+  event_spotlight:
+    title: "Evento Destacado"
+    sign_up_button: "Regístrate en Mobilize.us"
+
   candidate_spotlight:
     title: "Candidatos Destacados"
     subtitle: "Conoce a algunos de los candidatos demócratas que trabajan para ti."

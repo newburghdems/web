@@ -1,0 +1,36 @@
+{% assign event = site.data.event_spotlight %}
+{% if event.enabled %}
+<div class="w-full flex flex-col items-center">
+    <div class="bg-white overflow-hidden p-6 sm:p-8 rounded-lg shadow-xl w-full text-gray-800 border border-gray-200 border-t-4 border-oc-orange-dark">
+        <h2 class="font-merriweather text-2xl sm:text-3xl font-semibold text-dem-blue-600 mb-6 text-center md:text-left">
+            {{ site.data.i18n[page.lang].home.event_spotlight.title | default: "Event Spotlight" }}
+        </h2>
+
+        {% comment %} The entire image is a clickable link to the Mobilize page {% endcomment %}
+        <a href="{{ event.mobilize_url }}" target="_blank" rel="noopener noreferrer" class="block group rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+            <img src="{{ event.image_path | relative_url }}" alt="{{ event.image_alt }}" class="w-full h-auto object-cover group-hover:opacity-90 transition-opacity duration-300">
+        </a>
+
+        {% comment %} Event Details Section {% endcomment %}
+        <div class="mt-6 space-y-3 text-left">
+            <h3 class="font-merriweather text-xl font-bold text-dem-blue-700">{{ event.title }}</h3>
+            <p class="flex items-start">
+                <i data-lucide="calendar" class="h-5 w-5 mr-3 text-dem-blue-500 flex-shrink-0 mt-0.5"></i>
+                <span class="font-inter text-gray-700"><strong>{{ event.date }}</strong><br>{{ event.time }}</span>
+            </p>
+            <p class="flex items-start">
+                <i data-lucide="map-pin" class="h-5 w-5 mr-3 text-dem-blue-500 flex-shrink-0 mt-0.5"></i>
+                <span class="font-inter text-gray-700"><strong>{{ event.location_name }}</strong><br>{{ event.location_address }}</span>
+            </p>
+        </div>
+
+        {% comment %} Explicit Call-to-Action Button {% endcomment %}
+        <div class="mt-6">
+            <a href="{{ event.mobilize_url }}" target="_blank" rel="noopener noreferrer" class="w-full bg-dem-blue-500 hover:bg-dem-blue-700 text-white font-semibold py-3 px-5 rounded-md text-center transition-colors duration-300 text-lg flex items-center justify-center space-x-2">
+                <i data-lucide="edit-3" class="h-5 w-5"></i>
+                <span>{{ site.data.i18n[page.lang].home.event_spotlight.sign_up_button | default: "Sign Up Now" }}</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endif %}

@@ -146,10 +146,10 @@ const UpcomingEvents = ({ calendarUrl }) => {
         const upcomingOtherEvents = [];
 
         for (const event of events) {
-          if (upcomingOtherEvents.length < 3) {
+          if (upcomingOtherEvents.length < 6) {
             upcomingOtherEvents.push(event);
           }
-          if (upcomingOtherEvents.length >=3) break;
+          if (upcomingOtherEvents.length >= 6) break;
         }
 
         setOtherEvents(upcomingOtherEvents);

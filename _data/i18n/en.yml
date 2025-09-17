@@ -49,6 +49,9 @@ home:
     also_coming_up: Upcoming Events
     no_other_events: No other events scheduled at the moment.
     view_all_events: View All Events
+  event_spotlight:
+    title: "Event Spotlight"
+    sign_up_button: "Sign Up on Mobilize.us"
   candidate_spotlight:
     title: Meet Our Candidates
     subtitle: Get to know the Democrats working to represent our community.
