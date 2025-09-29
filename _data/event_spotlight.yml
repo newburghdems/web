@@ -3,19 +3,19 @@
 enabled: true
 
 # The main title for the event spotlight section.
-title: "Knock on Doors for Democrats - Town of Newburgh"
+title: "We’re 30 Days from Election Day — Let’s Rally Together!"
 
 # Event details
-date: "Saturday, September 20"
-time: "10:30am – 1pm EDT"
-location_name: "The Shake and Grind Cafe Parking Lot"
-location_address: "190 S Plank Rd, Newburgh, NY 12550"
+date: "Saturday, October 4"
+time: "2:00pm – 3:30pm EDT"
+location_name: "Newburgh Town Center, Side Parking Lot"
+location_address: "1431 NY-300, Newburgh, NY 12550"
 
 # --- Call to Action ---
 # IMPORTANT: Replace this placeholder with your actual Mobilize.us event URL.
-mobilize_url: "https://www.mobilize.us/orangecountydemocrats/event/845929/?referring_vol=6921289&rname=Jennifer&timeslot=5528283&referring_participation=44021954&referring_data_signature=v1-404f51e2e57327b1&share_medium=copy_link&share_context=signup-form-modal"
+mobilize_url: "https://www.mobilize.us/townofnewburghdemocraticcommmitee/event/851385/?referring_vol=6921289&share_context=dashboard-event-details&sharer_role=2"
 
 # --- Image Details ---
 # Assumes you will save the event graphic at this path.
-image_path: "/assets/img/events/canvassing-day-ld16.png"
-image_alt: "Canvassing Day event for Mary Lou Carolan, Stephen Hunter, and Mary McLymore"
+image_path: "/assets/img/events/gotv-rally-oct-4.png"
+image_alt: "Local elections matter now more than ever. Join us for a Get Out the Vote Rally & Volunteer Appreciation Event!"
