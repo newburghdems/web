@@ -3,19 +3,19 @@
 enabled: true
 
 # The main title for the event spotlight section.
-title: "We’re 30 Days from Election Day — Let’s Rally Together!"
+title: "No Kings - Newburgh"
 
 # Event details
-date: "Saturday, October 4"
-time: "2:00pm – 3:30pm EDT"
-location_name: "Newburgh Town Center, Side Parking Lot"
-location_address: "1431 NY-300, Newburgh, NY 12550"
+date: "Saturday, October 18"
+time: "10:00am – 12:00pm EDT"
+location_name: "Corner of Montgomery St & 2nd St"
+location_address: "2nd St & Montgomery St, Newburgh, NY 12550"
 
 # --- Call to Action ---
 # IMPORTANT: Replace this placeholder with your actual Mobilize.us event URL.
-mobilize_url: "https://www.mobilize.us/townofnewburghdemocraticcommmitee/event/851385/?referring_vol=6921289&share_context=dashboard-event-details&sharer_role=2"
+mobilize_url: "https://www.mobilize.us/nokings/event/841316/"
 
 # --- Image Details ---
 # Assumes you will save the event graphic at this path.
-image_path: "/assets/img/events/gotv-rally-oct-4.png"
-image_alt: "Local elections matter now more than ever. Join us for a Get Out the Vote Rally & Volunteer Appreciation Event!"
+image_path: "/assets/img/events/no-kings-oct-18.png"
+image_alt: "Our peaceful movement is only getting bigger and stronger."

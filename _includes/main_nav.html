@@ -1,4 +1,4 @@
-<header class="bg-white shadow-md fixed w-full z-10 top-0">
+<header class="bg-white shadow-md fixed w-full z-50 top-0">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
             <div class="flex-shrink-0">
@@ -39,7 +39,7 @@
                             {{ text }}
                             <i data-lucide="chevron-down" class="ml-1 h-4 w-4"></i>
                         </button>
-                        <div class="absolute left-0 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden group-hover:block">
+                        <div class="absolute left-0 w-48 bg-white rounded-md shadow-lg py-1 z-50 hidden group-hover:block">
                             {% for sublink in item.sublinks %}
                             {% assign sub_url = sublink.url | localize_url | relative_url %}
                             {% assign sub_text = site.data.i18n[page.lang].nav[sublink.i18n_key] | default: sublink.title_override %}
