@@ -1,6 +1,6 @@
 # Controls whether the event spotlight is displayed on the homepage.
 # Set to false or remove the file to hide it.
-enabled: true
+enabled: false
 
 # The main title for the event spotlight section.
 title: "GOTV Rally & Canvass"
