@@ -147,10 +147,10 @@ const UpcomingEvents = ({
         events.sort((a, b) => a.start - b.start);
         const upcomingOtherEvents = [];
         for (const event of events) {
-          if (upcomingOtherEvents.length < 5) {
+          if (upcomingOtherEvents.length < 4) {
             upcomingOtherEvents.push(event);
           }
-          if (upcomingOtherEvents.length >= 5) break;
+          if (upcomingOtherEvents.length >= 4) break;
         }
         setOtherEvents(upcomingOtherEvents);
       } catch (err) {
@@ -196,9 +196,9 @@ const UpcomingEvents = ({
     className: "mt-8 md:mt-0"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "font-merriweather text-2xl sm:text-3xl font-semibold text-dem-blue-600 mb-4"
-  }, translations.also_coming_up), otherEvents.length > 0 ? /*#__PURE__*/React.createElement("ul", {
-    className: "space-y-4"
-  }, otherEvents.map((event, index) => /*#__PURE__*/React.createElement("li", {
+  }, translations.also_coming_up), otherEvents.length > 0 ? /*#__PURE__*/React.createElement("div", {
+    className: "grid grid-flow-col md:grid-rows-2 md:gap-6"
+  }, otherEvents.map((event, index) => /*#__PURE__*/React.createElement("div", {
     key: event.uid || index,
     className: "border-b border-gray-200 pb-3.5"
   }, /*#__PURE__*/React.createElement("h4", {

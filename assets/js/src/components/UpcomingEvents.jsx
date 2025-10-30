@@ -146,10 +146,10 @@ const UpcomingEvents = ({ calendarUrl }) => {
         const upcomingOtherEvents = [];
 
         for (const event of events) {
-          if (upcomingOtherEvents.length < 5) {
+          if (upcomingOtherEvents.length < 4) {
             upcomingOtherEvents.push(event);
           }
-          if (upcomingOtherEvents.length >= 5) break;
+          if (upcomingOtherEvents.length >= 4) break;
         }
 
         setOtherEvents(upcomingOtherEvents);
@@ -201,18 +201,18 @@ const UpcomingEvents = ({ calendarUrl }) => {
       <div className="mt-8 md:mt-0">
         <h3 className="font-merriweather text-2xl sm:text-3xl font-semibold text-dem-blue-600 mb-4">{translations.also_coming_up}</h3>
         {otherEvents.length > 0 ? (
-          <ul className="space-y-4">
+          <div className="grid grid-flow-col md:grid-rows-2 md:gap-6">
             {otherEvents.map((event, index) => (
-              <li key={event.uid || index} className="border-b border-gray-200 pb-3.5">
+              <div key={event.uid || index} className="border-b border-gray-200 pb-3.5">
                 <h4 className="font-inter text-base font-semibold text-dem-blue-500 mb-1">{event.title}</h4>
                 <p className="text-xs text-gray-600 flex items-center">
                   <CalendarClock className="h-3.5 w-3.5 mr-1.5 text-gray-400 flex-shrink-0" />
                   {formatDateTimeForOtherEvents(event.start, event.isAllDay)}
                 </p>
                 {event.location && <p className="text-xs text-gray-500 mt-1 ml-5">{event.location}</p>}
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         ) : (
           <p className="font-inter text-gray-600">{translations.also_coming_up}</p>
         )}
