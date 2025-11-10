@@ -120,7 +120,10 @@ const UpcomingEvents = ({
 
                 for (const occ of nextOccurrences) {
                   if (occ >= now) {
-                    startDate = new Date(occ);
+                    // Reconstruct the date to ensure the time is correct, compensating for potential DST issues in the ical library.
+                    const originalStartDate = new Date(event.start);
+                    const occurrenceDate = new Date(occ);
+                    startDate = new Date(occurrenceDate.getFullYear(), occurrenceDate.getMonth(), occurrenceDate.getDate(), originalStartDate.getHours(), originalStartDate.getMinutes(), originalStartDate.getSeconds());
                     const duration = new Date(event.end).getTime() - new Date(event.start).getTime();
                     endDate = new Date(startDate.getTime() + duration);
                     break; // Use the first future occurrence
