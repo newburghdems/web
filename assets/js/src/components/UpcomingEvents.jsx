@@ -213,7 +213,7 @@ const UpcomingEvents = ({ calendarUrl }) => {
       <div className="mt-8 md:mt-0">
         <h3 className="font-merriweather text-2xl sm:text-3xl font-semibold text-dem-blue-600 mb-4">{translations.also_coming_up}</h3>
         {otherEvents.length > 0 ? (
-          <div className="grid grid-flow-col md:grid-rows-2 md:gap-6">
+          <div className="grid md:grid-flow-col md:grid-rows-2 md:gap-6">
             {otherEvents.map((event, index) => (
               <div key={event.uid || index} className="border-b border-gray-200 pb-3.5">
                 <h4 className="font-inter text-base font-semibold text-dem-blue-500 mb-1">{event.title}</h4>

@@ -200,7 +200,7 @@ const UpcomingEvents = ({
   }, /*#__PURE__*/React.createElement("h3", {
     className: "font-merriweather text-2xl sm:text-3xl font-semibold text-dem-blue-600 mb-4"
   }, translations.also_coming_up), otherEvents.length > 0 ? /*#__PURE__*/React.createElement("div", {
-    className: "grid grid-flow-col md:grid-rows-2 md:gap-6"
+    className: "grid md:grid-flow-col md:grid-rows-2 md:gap-6"
   }, otherEvents.map((event, index) => /*#__PURE__*/React.createElement("div", {
     key: event.uid || index,
     className: "border-b border-gray-200 pb-3.5"
