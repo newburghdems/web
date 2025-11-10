@@ -1,0 +1,33 @@
+{% assign candidates = site.data.candidates %}
+
+<section id="candidate-congrats" class="py-20 bg-gradient-to-br from-dem-blue-800 to-dem-blue-900 text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-merriweather font-bold mb-3">Congratulations to Our Winning Candidates!</h1>
+            <p class="text-lg md:text-xl text-dem-blue-200 font-inter">A historic victory for the Town of Newburgh!</p>
+        </div>
+
+        {% if candidates and candidates.size > 0 %}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
+            {% for candidate in candidates %}
+            <div class="text-center group">
+                <div class="relative inline-block">
+                    <img src="{{ candidate.photo | relative_url }}" alt="Photo of {{ candidate.name }}" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-white shadow-lg transform transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-xl font-merriweather font-semibold text-white">{{ candidate.name }}</h3>
+                    <p class="font-inter text-dem-blue-300">{{ candidate.position_running_for }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="text-center mt-20 bg-white/10 backdrop-blur-sm p-8 rounded-lg shadow-2xl border border-white/20 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-merriweather font-bold text-white mb-4">A Special Thank You</h2>
+            <p class="text-lg text-dem-blue-200 font-inter">
+                This incredible victory would not have been possible without the tireless dedication of our volunteers, the unwavering support of our committee members, and the generous contributions from our donors. Your commitment to our community and our candidates has made all the difference. Thank you for everything you do!
+            </p>
+        </div>
+    </div>
+</section>
