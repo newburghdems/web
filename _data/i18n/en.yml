@@ -68,6 +68,12 @@ home:
     loading: "Loading latest updates..."
     check_back: "Please check back soon"
     view_all: "View all"
+  
+  candidate_congrats:
+    title: "Congratulations to Our Winning Candidates!"
+    subtitle: "A historic victory for the Town of Newburgh!"
+    thank_you_title: "A Special Thank You"
+    thank_you_text: "This incredible victory would not have been possible without the tireless dedication of our volunteers, the unwavering support of our committee members, and the generous contributions from our donors. Your commitment to our community and our candidates has made all the difference. Thank you for everything you do!"
 
 about:
   our_mission: Our Mission

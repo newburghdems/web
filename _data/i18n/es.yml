@@ -82,6 +82,12 @@ home:
     error_loading: "No se pudieron cargar las actualizaciones. Por favor, inténtalo de nuevo más tarde."
     no_posts: "No se encontraron publicaciones con imágenes en este momento."
 
+  candidate_congrats:
+    title: "¡Felicitaciones a Nuestros Candidatos Ganadores!"
+    subtitle: "¡Una victoria histórica para el Town of Newburgh!"
+    thank_you_title: "Un Agradecimiento Especial"
+    thank_you_text: "Esta increíble victoria no habría sido posible sin la incansable dedicación de nuestros voluntarios, el apoyo inquebrantable de los miembros de nuestro comité y las generosas contribuciones de nuestros donantes. Su compromiso con nuestra comunidad y nuestros candidatos ha marcado la diferencia. ¡Gracias por todo lo que hacen!"
+
 # About Page
 about:
   our_mission: "Nuestra Misión"
