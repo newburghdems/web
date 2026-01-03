@@ -37,25 +37,25 @@ levels:
   - level_name: "Orange County, NY"
     officials:
       - name: "Genesis Ramos"
-        position: "County Legislator (District 4)"
+        position: "County Legislator<br/>(District 4)"
         party: "Democrat"
         term_year_start: 2026
         term_year_end: 2028
         photo: "/assets/img/candidates/genesis-ramos.jpg"
       - name: "Stephen R. Hunter Jr"
-        position: "County Legislator (District 16)"
+        position: "County Legislator<br/>(District 16)"
         party: "Democrat"
         term_year_start: 2026
         term_year_end: 2028
         photo: "/assets/img/eo/stephen-hunter.jpg"
       - name: "Gabrielle Hill"
-        position: "County Legislator (District 6)"
+        position: "County Legislator<br/>(District 6)"
         party: "Democrat"
         term_year_start: 2026
         term_year_end: 2028
         photo: "/assets/img/candidates/gabrielle-hill.jpg"
       - name: "Virginia Scott"
-        position: "County Legislator (District 12)"
+        position: "County Legislator<br/>(District 12)"
         party: "Democrat"
         term_year_start: 2026
         term_year_end: 2028

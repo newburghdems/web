@@ -52,11 +52,11 @@ site.data.i18n[page.lang].elected_officials
                         {% comment %} Text Content Section {% endcomment %}
                         <div class="flex-grow flex flex-col items-center text-center md:items-start md:text-left">
                             <h4 class="text-xl font-merriweather font-semibold text-dem-blue-700 group-hover:text-dem-blue-500 transition-colors duration-300 mb-1">{{ rep.name }}</h4>
-                            <p class="text-md font-inter text-gray-700 group-hover:text-dem-blue-600 transition-colors duration-300 mb-1">{{ rep.position }}</p>
+                            <p class="font-inter text-gray-700 group-hover:text-dem-blue-600 transition-colors duration-300 mb-1">{{ rep.position }}</p>
                             {% if rep.term_year_start and rep.term_year_end %}
-                            <p class="text-sm font-inter text-gray-500"><strong class="font-medium text-gray-600">{{ site.data.i18n[page.lang].elected_officials.term }}:</strong> {{ rep.term_year_start }} - {{ rep.term_year_end }}</p>
+                            <p class="font-inter text-gray-500"><strong class="font-medium text-gray-600">{{ site.data.i18n[page.lang].elected_officials.term }}:</strong> {{ rep.term_year_start }} - {{ rep.term_year_end }}</p>
                             {% elsif rep.term_year_end %}
-                            <p class="text-sm font-inter text-gray-500"><strong class="font-medium text-gray-600">{{ site.data.i18n[page.lang].elected_officials.term_ends }}:</strong> {{ rep.term_year_end }}</p>
+                            <p class="font-inter text-gray-500"><strong class="font-medium text-gray-600">{{ site.data.i18n[page.lang].elected_officials.term_ends }}:</strong> {{ rep.term_year_end }}</p>
                             {% endif %}
 
                             {% if rep.website_url %}
