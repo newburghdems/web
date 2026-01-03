@@ -9,51 +9,57 @@ levels:
         term_year_start: 2024
         term_year_end: 2026
         photo: "/assets/img/eo/gil-piaquadio.jpg"
-      - name: "Paul Ruggiero"
-        position: "Town Councilman"
-        party: "Republican" # Assuming based on other Town officials, verify locally
-        term_year_start: 2022
-        term_year_end: 2026
-        photo: "/assets/img/eo/paul-ruggiero.jpg"
+      - name: "Mary McLymore"
+        position: "Town Council"
+        party: "Democrat"
+        term_year_start: 2026
+        term_year_end: 2029
+        photo: "/assets/img/eo/mary-mclymore.jpg"
+      - name: "Mary Lou Carolan"
+        position: "Town Council"
+        party: "Democrat"
+        term_year_start: 2026
+        term_year_end: 2029
+        photo: "/assets/img/eo/mary-lou-carolan.jpg"
       - name: "Scott Manley"
-        position: "Town Councilman"
+        position: "Town Council"
         party: "Republican" # From existing user file
         term_year_start: 2022
         term_year_end: 2026
         photo: "/assets/img/eo/scott-manley.jpg"
       - name: "Anthony LoBiondo"
-        position: "Town Councilman"
+        position: "Town Council"
         party: "Republican" # From existing user file
         term_year_start: 2020
         term_year_end: 2026
         photo: "/assets/img/eo/anthony-lobiondo.jpg"
-      - name: "Jim Politi"
-        position: "Town Councilman"
-        party: "Republican"
-        term_year_start: 2024
-        term_year_end: 2028
-        photo: "/assets/img/eo/jim-politi.jpg"
 
   - level_name: "Orange County, NY"
     officials:
       - name: "Genesis Ramos"
-        position: "County Legislator (District 6)"
-        party: "Democrat"
-        term_year_start: 2022
-        term_year_end: 2026
-        photo: "/assets/img/candidates/genesis-ramos.jpg"
-      - name: "Leigh J. Benton"
-        position: "County Legislator (District 16)"
-        party: "Republican"
-        term_year_start: 2022
-        term_year_end: 2026
-        photo: "/assets/img/eo/leigh-benton.jpg"
-      - name: "Kevindaryán Luján"
         position: "County Legislator (District 4)"
         party: "Democrat"
         term_year_start: 2022
         term_year_end: 2026
-        photo: "/assets/img/candidates/kevindaryan-lujan.jpg"
+        photo: "/assets/img/candidates/genesis-ramos.jpg"
+      - name: "Stephen R. Hunter Jr"
+        position: "County Legislator (District 16)"
+        party: "Democrat"
+        term_year_start: 2026
+        term_year_end: 2028
+        photo: "/assets/img/eo/stephen-hunter.jpg"
+      - name: "Gabrielle Hill"
+        position: "County Legislator (District 6)"
+        party: "Democrat"
+        term_year_start: 2026
+        term_year_end: 2028
+        photo: "/assets/img/candidates/gabrielle-hill.jpg"
+      - name: "Virginia Scott"
+        position: "County Legislator (District 12)"
+        party: "Democrat"
+        term_year_start: 2026
+        term_year_end: 2028
+        photo: "/assets/img/candidates/virginia-scott.jpg"
 
   - level_name: "State of New York"
     officials:
