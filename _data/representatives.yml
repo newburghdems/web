@@ -39,8 +39,8 @@ levels:
       - name: "Genesis Ramos"
         position: "County Legislator (District 4)"
         party: "Democrat"
-        term_year_start: 2022
-        term_year_end: 2026
+        term_year_start: 2026
+        term_year_end: 2028
         photo: "/assets/img/candidates/genesis-ramos.jpg"
       - name: "Stephen R. Hunter Jr"
         position: "County Legislator (District 16)"
